@@ -8,11 +8,11 @@ To try out the application yourself, head over to [dependents.dev](https://depen
 
 The application has been designed as a series of docker containers, communicating over http via REST APIs, with the following architecture:
 
-![Application Architecture](../Report/Draft/figures/implemented-architecture.jpg)
+![Application Architecture](./figures/implemented-architecture.jpg)
 
 The overall application logic distributed across the defined services can be visualised as so:
 
-![System Logic](../Report/Draft/figures/system-logic.jpg)
+![System Logic](./figures/system-logic.jpg)
 
 The source code for each service can be found in the following subdirectories:
 * [Front End Analysis and Visualisation](./dependents-visualisation-ui/)

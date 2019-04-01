@@ -5,6 +5,8 @@ docker-compose-proxy.yml
 docker-compose-services.yml
 /pom-dump
 
+.DS_Store
+
 # Compiled class file
 *.class
 
