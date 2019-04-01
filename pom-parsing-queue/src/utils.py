@@ -2,6 +2,10 @@ import os
 from redis import Redis
 from neo4j import GraphDatabase
 
+"""
+get_redis connects to a redis database and returns an instance of this
+connection.
+"""
 def get_redis():
     # if a custom IP for redis has been specified, use it, else default to localhost
     redis_ip = os.environ.get('REDIS_IP') 
@@ -19,6 +23,10 @@ def get_redis():
     else:
         return Redis(redis_ip, redis_port, password=redis_password)
 
+"""
+get_neo4j connects to a Neo4j database and returns an instance
+of this connection.
+"""
 def get_neo4j():
     neo4j_ip = os.environ.get('NEO4J_IP') 
     if (neo4j_ip == None):
@@ -35,6 +43,10 @@ def get_neo4j():
 
     return GraphDatabase.driver(neo4j_ip, auth=(neo4j_user, neo4j_password))
 
+"""
+get_mysql connects to a MySQL Database and returns an instance of that
+connection.
+"""
 def get_mysql():
     mysql_user = os.environ.get('MYSQL_USER') 
     if (mysql_user == None):
@@ -54,8 +66,14 @@ def get_mysql():
 
     return mysql.connector.connect(user=mysql_user, password=mysql_password, host=mysql_host, database=mysql_db)
 
+"""
+get_depends_service returns the URL of the pom-search-service
+"""
 def get_depends_service():
     return os.environ.get("DEPENDS_SERVICE_URL")
 
+"""
+get_queue_manager returns the URL of the queue manager for this manager-worker set.
+"""
 def get_queue_manager():
     return os.environ.get("QUEUE_MANAGER")

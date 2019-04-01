@@ -25,3 +25,6 @@ This component is written in Java, and uses the Grizzly2 package to serve a REST
 To build and run this component for development purposes, use Maven - run 'maven build'. A HTTP server will be started on localhost:8082. This server requires a number of configuration variables - specified in environment variables. To set up these environment variables for development purposes, run 'cp config.sh.template config.sh' and then modify config.sh to populate the missing variables. Finally, run 'source config.sh'. The API for this server is documented as a [Postman collection](./pom-search-service.postman_collection.json).
 
 To build this component into a docker container, run './build.sh'. The configuration variables defined in 'config.sh' must be injected into this container.
+
+This service is capable of searching for dependent repositories in a MySQL Cache of pom.xml files. This is a MySQL database which contains a data dump of all pom.xml files hosted on GitHub, and metadata regarding their respective repositories. MySQL syntax can be used to search for strings inside the pom.xml files. As this database is read only, it can be replicated to improve performance. The reasoning for this database is further discussed in the report associated with this project.
+ 

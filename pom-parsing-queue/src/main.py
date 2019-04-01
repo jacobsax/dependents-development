@@ -10,16 +10,12 @@ app = Flask(__name__)
 
 # Tell RQ what Redis connection to use
 redis_conn = utils.get_redis()
-q_high = Queue('highdepends', connection=redis_conn)  # no args implies the default queue
-q_medium = Queue('mediumdepends', connection=redis_conn)  # no args implies the default queue
-q_low = Queue('lowdepends', connection=redis_conn)  # no args implies the default queue
 
-# job = q.enqueue(scrape_repo, "alibaba/fastjson", 0, 0)
-# print(job.result)   # => None
+# define three different priority queues for jobs to be added to
+q_high = Queue('highdepends', connection=redis_conn)  
+q_medium = Queue('mediumdepends', connection=redis_conn) 
+q_low = Queue('lowdepends', connection=redis_conn)  
 
-# # Now, wait a while, until the worker is finished
-# time.sleep(2)
-# print(job.result)   # => 889
 
 @app.route('/dependents/project', methods=['POST'])
 def create_parse_project_task():

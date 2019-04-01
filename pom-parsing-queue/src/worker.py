@@ -3,6 +3,7 @@ import requests
 import utils
 import os
 
+# Start a worker and begin listening on the redis job queue
 if __name__ == '__main__':
     # Tell rq what Redis connection to use
     with Connection(utils.get_redis()):

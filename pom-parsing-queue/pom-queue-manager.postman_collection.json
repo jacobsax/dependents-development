@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "97568b1a-4daa-4f90-8d27-06f9e9305d18",
+		"name": "pom-queue-manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request Search of Dependents to Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/dependents/project?github_short_url=javaparser/javaparser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"dependents",
+						"project"
+					],
+					"query": [
+						{
+							"key": "github_short_url",
+							"value": "javaparser/javaparser",
+							"description": "The GitHub short URL of the repository to identify dependents of."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Search of Dependents to Artifact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/dependents/package?group=com.github.javaparser&artifact=javaparser&start=1&end=100&priority=high&parent=javaparser/javaparser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"dependents",
+						"package"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "com.github.javaparser",
+							"description": "The Group ID of the Artifact"
+						},
+						{
+							"key": "artifact",
+							"value": "javaparser",
+							"description": "The Artifact ID of the Artifact"
+						},
+						{
+							"key": "start",
+							"value": "1",
+							"description": "The start point for adding paginated search results."
+						},
+						{
+							"key": "end",
+							"value": "100",
+							"description": "The end point for adding paginated search results."
+						},
+						{
+							"key": "priority",
+							"value": "high",
+							"description": "The priority at which to carry out this search."
+						},
+						{
+							"key": "parent",
+							"value": "javaparser/javaparser",
+							"description": "The GitHub short URL of the repository which produces this Artifact."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

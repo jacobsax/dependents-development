@@ -4,6 +4,8 @@ The produced application defined here allows a user to identify and analyse depe
 
 To try out the application yourself, head over to [dependents.dev](https://dependents.dev).
 
+<i>A number of security keys and passwords are defined in files in this repository. These are for services deployed as part of running this application (i.e. databases), and can not be used to access external services. In some cases, where an API key for an external service is required - i.e. a Github REST API Key - a template file will be indicated that must be copied, with this information inserted. If you wish to deploy this application in a secure manner, I highly recommend changing all the currently defined keys and keeping these keys private.</i> 
+
 # Build and Deployment
 
 The application has been designed as a series of docker containers, communicating over http via REST APIs, with the following architecture:
