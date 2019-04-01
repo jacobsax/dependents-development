@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "e562bb0f-ba3d-4bae-b4ce-d677f50922d6",
+		"name": "ast-parsing-queue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Queue Parsing of a Repository",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/java/parse?github_short_url=javaparser/javaparser&parsing_type=all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"java",
+						"parse"
+					],
+					"query": [
+						{
+							"key": "github_short_url",
+							"value": "javaparser/javaparser",
+							"description": "The short URL of the Github Repository to parse."
+						},
+						{
+							"key": "parsing_type",
+							"value": "all",
+							"description": "The granularity with which to parse the repository. This can be 'all' or 'packageclassonly'."
+						}
+					]
+				},
+				"description": "This endpoint allows a user to queue the parsing of a repository."
+			},
+			"response": []
+		}
+	]
+}

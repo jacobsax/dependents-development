@@ -17,6 +17,8 @@ The worker operates as follows:
 
 The parsing of source code is handled by the [Java Parser CLI Tool](../java-parser/), which is invoked by the worker during operation.
 
+The API used to query the manager to request parsing jobs is documented in a [postman collection](./ast-parsing-queue.postman_collection.json).
+
 ## Development and Deployment
 
 To build this project into a Docker container for deployment, run `./build.sh`.
