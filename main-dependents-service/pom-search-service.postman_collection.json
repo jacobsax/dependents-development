@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "1a0dcef5-4e5a-4fae-aea9-a099bbb3591b",
+		"name": "pom-search-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Project Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://dependents.dev:8082/java/project/{{group}}/{{project}}?",
+					"protocol": "http",
+					"host": [
+						"dependents",
+						"dev"
+					],
+					"port": "8082",
+					"path": [
+						"java",
+						"project",
+						"{{group}}",
+						"{{project}}"
+					],
+					"query": [
+						{
+							"key": "remote",
+							"value": "true",
+							"description": "Set to true to search GitHub. Defaults to false (searches MySQL).",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Returns the Group ID, Artifact ID and Version ID of the project."
+			},
+			"response": []
+		},
+		{
+			"name": "Search for Dependent Repositories from MySQL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://dependents.dev:8082/java/package/{{groupid}}/{{artifactid}}/dependents/local?start=0&end=100",
+					"protocol": "http",
+					"host": [
+						"dependents",
+						"dev"
+					],
+					"port": "8082",
+					"path": [
+						"java",
+						"package",
+						"{{groupid}}",
+						"{{artifactid}}",
+						"dependents",
+						"local"
+					],
+					"query": [
+						{
+							"key": "pom",
+							"value": "true",
+							"description": "Set to true to also parse pom files. Defaults to false.",
+							"disabled": true
+						},
+						{
+							"key": "projects",
+							"value": "true",
+							"description": "Set to true to return a list of all projects. Defaults to true.",
+							"disabled": true
+						},
+						{
+							"key": "all",
+							"value": "false",
+							"description": "Set to true to fetch all available results (no pagination, ignores start and end parameters)",
+							"disabled": true
+						},
+						{
+							"key": "start",
+							"value": "0",
+							"description": "Specifies the first project to in the retrieved list to return. Defaults to 0."
+						},
+						{
+							"key": "end",
+							"value": "100",
+							"description": "Specifies the last project to in the retrieved list to return. Defaults to 10."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parse POM File",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dependents.dev:8082/java/parse/pom",
+					"protocol": "http",
+					"host": [
+						"dependents",
+						"dev"
+					],
+					"port": "8082",
+					"path": [
+						"java",
+						"parse",
+						"pom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for Dependent Repositories From GitHub API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://dependents.dev:8082/java/package/{{groupid}}/{{artifactid}}/dependents/remote",
+					"protocol": "http",
+					"host": [
+						"dependents",
+						"dev"
+					],
+					"port": "8082",
+					"path": [
+						"java",
+						"package",
+						"{{groupid}}",
+						"{{artifactid}}",
+						"dependents",
+						"remote"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -21,6 +21,11 @@ def validate_github_repository(group, project):
 
     return jsonify({'state': "ok"}), 200
 
+"""
+This endpoint retrieves the direct children vertices of a node in the call graph of
+the specified project. Each child is returned with a url, which can be called to retrieve
+the children vertices of the child.
+"""
 @project_blueprint.route("/<group>/<project>/retrieve/children", methods=['Get'])
 def retrieve_children_of_node(group, project):
     node_label = request.args.get('label')
