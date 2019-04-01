@@ -131,20 +131,27 @@ public class DirectoryParser {
             }
         }
 
+        // Identifies the source code root directory 
         ProjectRoot projectRoot = new SymbolSolverCollectionStrategy()
                 .collect(dirPath);
 
+        // Retrieves the path of each source code file in the source code directory
+        // and adds them to the symbol solver for type inference purposes
         for (SourceRoot sourceRoot: projectRoot.getSourceRoots()) {
             combinedTypeSolver.add(new JavaParserTypeSolver(sourceRoot.getRoot()));
         }
 
+        // Creates a new JavaParser Symbol Solver, and adds the type solver already created.
+        // The SymbolSolver carries out type inference - for example, it can infer the class and
+        // package of an identified method.
         JavaSymbolSolver symbolSolver = new JavaSymbolSolver(combinedTypeSolver);
         JavaParser.getStaticConfiguration().setSymbolResolver(symbolSolver);
 
         // create the AST tree visitors
         VoidVisitor<?> classVisitor = new ClassOrInterfaceDeclarationVisitor(graph);
         VoidVisitor<?> packageVisitor = new PackageDeclarationVisitor(graph, this.projectName, this.projectID);
-
+        
+        // if both methods and overloads are also to be parsed, instantiate their respective visitors
         VoidVisitor<?> overloadVisitor = null;
         VoidVisitor<?> methodVisitor = null;
         if (this.parseAll) {
@@ -152,6 +159,10 @@ public class DirectoryParser {
             methodVisitor = new MethodCallVisitor(graph);
         }
 
+        /*
+         For each identified source code file, parse it to generate an Abstract Syntax Tree, 
+         and then run the visitors on this tree
+         */
         for (SourceRoot sourceRoot: projectRoot.getSourceRoots()) {
             try {
                 sourceRoot.tryToParse();

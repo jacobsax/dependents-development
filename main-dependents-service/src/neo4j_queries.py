@@ -1,40 +1,4 @@
-#MATCH (p:Project {id:'alibaba/fastjson'})-[:Contains]->(a:Artifact) RETURN a.group, a.artifact
-
-#MATCH (p:Project {id:'alibaba/fastjson'})-[:Contains]->(a:Artifact) RETURN a.group, a.artifact
-#MATCH (p:Project {id: "javaparser/javaparser"})-[:Contains*]->(m:Method)<-[:Calls]-(d:Method)<-[:Contains*]-(e:Project) RETURN m, d
-
-
-'''
-MATCH p = (:Project {id: "javaparser/javaparser"})-[r:Contains*]->(x)<-[:Calls]-()<-[:Contains*]-(d:Project)
-WITH collect(DISTINCT x) as nodes, [r in collect(distinct last(r)) | [id(startNode(r)),id(endNode(r))]] as rels, collect(DISTINCT d) as dependents
-RETURN size(nodes),size(rels), nodes, rels, dependents
-
-
-MATCH (p:Project { id: 'javaparser/javaparser' })-[:Contains*]->(:ClassOrInterface {id: 'com.github.javaparser.ast.nodeTypes.modifiers.NodeWithAbstractModifier'})-[:Contains]->(c)-[:Contains*]->(:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project)
-RETURN c, COUNT(DISTINCT d) as v
-UNION
-MATCH (p:Project { id: 'javaparser/javaparser' })-[:Contains*]->(:ClassOrInterface {id: 'com.github.javaparser.ast.nodeTypes.modifiers.NodeWithAbstractModifier'})-[:Contains]->(c:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project)
-RETURN c, COUNT(DISTINCT d) as v
-
-MATCH p = (:Project {id: "TestSmells/TestSmellDetector"})-[r:Contains*0..]->(x)-[l:Contains*0..]->(i:Method)-[:Calls]->(:Method)<-[:Contains*0..]-(:Project {id: "javaparser/javaparser"})
-WITH collect(DISTINCT x) as nodes, collect(DISTINCT i) as other_nodes, [r in collect(distinct last(r)) | [id(startNode(r)),id(endNode(r))]] as rels, [l in collect(distinct last(l)) | [id(startNode(l)),id(endNode(l))]] as other_rels
-RETURN size(nodes),size(rels), size(other_nodes), size(other_rels), nodes, rels, other_nodes, other_rels
-'''
 import utils
-
-# def build_node(node_id):
-#     return {"id": node_id}
-
-# def createTreeFromEdges(edges):
-#     tree = []
-#     for i in edges:
-#         parent_node, child_node = i
-#         if build_node(parent_node) in tree:
-#             tree[build_node(parent_node)]['children'].append(child_node)
-#         else:
-#             tree.append({"id": parent_node, "children": [{"id": child_node, "children": []}]})
-
-#     return tree
 
 def createTreeFromEdges(edges, vertices):
     nodes = {}
@@ -59,19 +23,8 @@ def createTreeFromEdges(edges, vertices):
 
 # retrieves dependent projects of the specific node
 def ast_tree_dependent(tx, group, project, dependent_group, dependent_project, sub_node_label, sub_node_id):
-    # print("MATCH (p:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{ id: '{}'}})-[:Contains]->(c)-[:Contains*]->(:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project) RETURN c, COUNT(DISTINCT d) as v".format(group, project, node_label, node_id))
-    # result = tx.run("MATCH (p:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{ id: '{}'}})-[:Contains]->(c)-[:Contains*]->(:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project) RETURN c, COUNT(DISTINCT d) as v".format(group, project, node_label, node_id))
-    
+
     if (sub_node_label != None and sub_node_id != None):
-
-        # match = '''
-        #     MATCH (:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{id: '{}'}})-[:Contains*]->(m:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project)
-        #     RETURN d, COUNT(DISTINCT m) as v
-        #     UNION
-        #     MATCH (:Project {{ id: '{}/{}' }})-[:Contains*]->(m:{} {{id: '{}'}})<-[:Calls]-(:Method)<-[:Contains*]-(d:Project)
-        #     RETURN d, COUNT(DISTINCT m) as v
-        #     '''.format(group, project, node_label, node_id, group, project, node_label, node_id)
-
         match = '''
             MATCH p = (:Project {{id: "{}/{}"}})-[r:Contains*0..]->(x)-[l:Contains*0..]->(i:Method)-[:Calls]->(:Method)<-[:Contains*0..]-(y:{} {{id: "{}"}})<-[:Contains*0..]-(:Project {{id: "{}/{}"}})
             WITH collect(DISTINCT x) as nodes, collect(DISTINCT i) as other_nodes, [r in collect(distinct last(r)) | [id(startNode(r)),id(endNode(r))]] as rels, [l in collect(distinct last(l)) | [id(startNode(l)),id(endNode(l))]] as other_rels
@@ -113,10 +66,7 @@ def ast_tree_dependent(tx, group, project, dependent_group, dependent_project, s
 
 # retrieves dependent projects of the specific node
 def dependents_from_node(tx, group, project, node_label, node_id):
-    #print("MATCH (p:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{ id: '{}'}})-[:Contains]->(c)-[:Contains*]->(:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project) RETURN c, COUNT(DISTINCT d) as v".format(group, project, node_label, node_id))
-    #result = tx.run("MATCH (p:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{ id: '{}'}})-[:Contains]->(c)-[:Contains*]->(:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project) RETURN c, COUNT(DISTINCT d) as v".format(group, project, node_label, node_id))
     if (node_label != None and node_id != None):
-
         match = '''
             MATCH (:Project {{ id: '{}/{}' }})-[:Contains*]->(:{} {{id: '{}'}})-[:Contains*]->(m:Method)<-[:Calls]-(:Method)<-[:Contains*]-(d:Project)
             RETURN d, COUNT(DISTINCT m) as v
