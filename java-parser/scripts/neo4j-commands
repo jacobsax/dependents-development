@@ -1,0 +1,55 @@
+Find all projects:
+
+MATCH (project:Project) RETURN project;
+
+Find Packages in Project:
+
+MATCH (project:Project {id:"sparkdemobeginner"})-[:CONTAINS]->(package:PACKAGE) RETURN project, package;
+
+Find classes in Project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(class:CLASS_OR_INTERFACE)
+RETURN classes
+
+Get total number of classes in project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(class:CLASS_OR_INTERFACE)
+RETURN count(distinct class.id)
+
+FIND count of methods in Project:
+
+MATCH (project:Project {id:"sparkdemobeginner"})-[:CONTAINS*]->(method:METHOD)
+RETURN count(distinct method);
+
+Find methods in project:
+
+MATCH (project:Project {id:"sparkdemobeginner"})-[:CONTAINS*]->(method:METHOD)
+RETURN method;
+
+Find methods called externally in project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(method:METHOD)<-[:CALLS]-(dependentMethod:METHOD)<-[:CONTAINS*]-(otherProject:Project) RETURN method, dependentMethod;
+
+Find count of method calls on methods of project:
+
+MATCH (project:Project {id:"comjavaparser"})-[:CONTAINS*]->(method:METHOD)<-[:CALLS]-(dependentMethod:METHOD)<-[:CONTAINS*]-(otherProject:Project) WHERE NOT project.id = otherProject.id
+RETURN count(distinct dependentMethod)
+
+Find dependent method calls on methods of project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(method:METHOD)<-[:CALLS]-(dependentMethod:METHOD)<-[:CONTAINS*]-(otherProject:Project)
+RETURN method, dependentMethod;
+
+Find transitive dependent method calls on methods of project:
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(method:METHOD)<-[:CALLS*]-(dependentMethod:METHOD)<-[:CONTAINS*]-(otherProject:Project) WHERE NOT project.id = otherProject.id
+RETURN dependentMethod;
+
+Find dependent projects of project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(:METHOD)<-[:CALLS]-(:METHOD)<-[:CONTAINS*]-(otherProject:Project)
+RETURN otherProject;
+
+Find transitive dependent projects of project:
+
+MATCH (project:Project {id:"alibabafastjson"})-[:CONTAINS*]->(:METHOD)<-[:CALLS*]-(:METHOD)<-[:CONTAINS*]-(otherProject:Project)
+RETURN otherProject;

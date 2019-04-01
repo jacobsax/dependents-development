@@ -1,0 +1,16 @@
+USING PERIODIC COMMIT 1000
+LOAD CSV WITH HEADERS FROM "http://couchdb:5984/test/c28c858c22bb9374459de53784000856/edges.csv" AS row
+
+MATCH (project:Project { id: row.sourceId}),(package:Package { id: row.targetId})
+
+// CONTAINS Edge
+FOREACH(n IN (CASE WHEN row.type IN ["CONTAINS"] THEN [1] else [] END) |
+  MERGE (project)-[:CONTAINS]->(Package)
+)
+
+// CALLS Edge
+FOREACH(n IN (CASE WHEN row.type IN ["CALLS"] THEN [1] else [] END) |
+  MERGE (project)-[:CALLS]->(Package)
+)
+
+https://markhneedham.com/blog/2014/06/17/neo4j-load-csv-handling-conditionals/

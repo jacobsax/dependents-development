@@ -1,0 +1,6 @@
+BeautifulSoup4
+rq
+bs4
+neo4j
+flask
+requests

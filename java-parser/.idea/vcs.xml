@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test-manual-dependents/repos/fastjson" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test-manual-dependents/repos/javaparser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test-manual-dependents/repos/spark-demo-beginner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test-manual-dependents/repos/study" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test-manual-dependents/repos/testPay" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test_projects/ChessOOP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test_projects/appengine-endpoints-tictactoe-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/contrib/test_projects/jgrapht" vcs="Git" />
+  </component>
+</project>

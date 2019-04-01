@@ -1,0 +1,49 @@
+version: '2.2'
+
+services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j:latest
+    ports:
+      - "7687:7687"
+      - "7474:7474"
+      - "7437:7437"
+    networks:
+      - backend
+    volumes:
+      - /data/neo4j/data:/data
+      - /data/neo4j/logs:/logs
+  redis:
+    container_name: redis
+    image: redis:5
+    ports:
+      - "0.0.0.0:6379:6379"
+    entrypoint: redis-server --requirepass dce1fba2a32c4a259f7147a15f291555
+    restart: always
+    networks:
+      - backend
+  mysql:
+    image: mysql:5
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    cpus: 1
+    environment:
+      MYSQL_ROOT_PASSWORD: dd70e670ca6044bfa6a68cc0a0ec305f
+    volumes:
+      - /data/mysql:/var/lib/mysql
+    networks:
+      - backend
+    ports:
+      - 3306:3306
+      - 33060:33060
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    networks:
+      - backend
+
+networks:
+  backend:
+    external: true

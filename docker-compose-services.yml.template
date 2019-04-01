@@ -1,0 +1,134 @@
+version: '3'
+
+services:
+  entrypoint-proxy-service:
+    image: entrypoint-proxy-service:latest
+    ports:
+        - 8080:80
+    networks:
+      backend:
+        aliases:
+          - entrypoint-proxy-service
+  dependents-ui-service:
+    image: dependents-ui:latest
+    ports:
+        - 90:80
+    networks:
+      backend:
+        aliases:
+          - dependents-ui
+  pom-search-service:
+    image: pom-search-service:latest
+    ports:
+      - "8082:8082"
+    networks:
+      backend:
+        aliases:
+          - pom-search-service
+    environment:
+     - GIT_KEY= # Enter your GIT API Key here
+     - MYSQL_URL=mysql:3306/github-pom
+     - MYSQL_USER=root
+     - MYSQL_PASSWORD=dd70e670ca6044bfa6a68cc0a0ec305f
+  pom-parsing-queue-queue-worker-high:
+    image: pom-parsing-queue-queue-worker:latest
+    networks:
+      - backend
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=pom-parsing-queue-manager:80
+     - RQ_QUEUE=highdepends
+  pom-parsing-queue-queue-worker-medium:
+    image: pom-parsing-queue-queue-worker:latest
+    networks:
+      - backend
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=pom-parsing-queue-manager:80
+     - RQ_QUEUE=mediumdepends
+  pom-parsing-queue-queue-worker-low:
+    image: pom-parsing-queue-queue-worker:latest
+    networks:
+      - backend
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=pom-parsing-queue-manager:80
+     - RQ_QUEUE=lowdepends
+  pom-parsing-queue-manager:
+    image: pom-parsing-queue-manager:latest
+    ports:
+      - "5000:80"
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=pom-parsing-queue-manager:80
+    networks:
+      backend:
+        aliases:
+          - pom-parsing-queue-manager
+  ast-parsing-queue-manager:
+    image: ast-parsing-queue-manager:latest
+    ports:
+      - "5001:80"
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=ast-parsing-queue-manager:80
+    networks:
+      backend:
+        aliases:
+          - ast-parsing-queue-manager
+  ast-parsing-queue-worker:
+    image: ast-parsing-queue-worker:latest
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=ast-parsing-queue-worker:80
+    networks:
+      - backend
+  dependents-service:
+    image: dependents-service:latest
+    environment:
+     - NEO4J_PASS=ABC61190-2318-4FE0-B1A2-E89F9AA13D28
+     - NEO4J_USER=neo4j
+     - NEO4J_IP=neo4j
+     - REDIS_PASSWORD=dce1fba2a32c4a259f7147a15f291555
+     - REDIS_IP=redis
+     - DEPENDS_SERVICE_URL=http://pom-search-service:8082
+     - QUEUE_MANAGER=pom-parsing-queue-manager:80
+     - AST_QUEUE_MANAGER=ast-parsing-queue-manager:80
+     - DOMAIN=https://dependents.dev/api/v1
+    networks:
+      backend:
+        aliases:
+          - dependents-service
+networks:
+  backend:
+    external: true

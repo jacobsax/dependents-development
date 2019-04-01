@@ -1,0 +1,1 @@
+docker build -t entrypoint-proxy-service:latest .

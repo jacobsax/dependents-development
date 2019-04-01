@@ -1,0 +1,26 @@
+version: "2"
+services:
+  letsencrypt:
+    image: linuxserver/letsencrypt
+    container_name: letsencrypt
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - URL=example.com # enter your URL here
+      - SUBDOMAINS=www,
+      - VALIDATION=http
+      - EMAIL=example@example.com # enter your email address here
+    volumes:
+      - /etc/docker-nginx-proxy:/config
+    ports:
+      - 443:443
+      - 80:80 #required for http validation
+    restart: unless-stopped
+    networks:
+      - backend
+networks:
+  backend:
+    external: true

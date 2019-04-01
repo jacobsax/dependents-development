@@ -1,0 +1,5 @@
+export DIGITALOCEAN_SSH_KEY_FINGERPRINT="53:f4:49:10:66:6b:93:5c:59:c1:9c:4b:a9:42:e5:fd"
+export DIGITALOCEAN_ACCESS_TOKEN="a6f2175bc994734d93f1f2b26f5cc9afc545c1dca7037ee4afcac9a81d078d81"
+export DIGITALOCEAN_IMAGE="centos-7-x64"
+export DIGITALOCEAN_REGION="lon1"
+docker-machine create --driver digitalocean --digitalocean-access-token $DIGITALOCEAN_ACCESS_TOKEN --digitalocean-ssh-key-fingerprint $DIGITALOCEAN_SSH_KEY_FINGERPRINT --digitalocean-image $DIGITALOCEAN_IMAGE --digitalocean-region $DIGITALOCEAN_REGION --digitalocean-size s-2vcpu-4gb --digitalocean-private-networking true
