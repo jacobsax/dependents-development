@@ -2,7 +2,7 @@
 
 The produced application defined here allows a user to identify and analyse dependencies between open source repositories containing a Java project, built using Maven, and hosted on GitHub. Via a web based user interface, a user can specify the URL of a repository to be analysed. From this analysis, other public repositories hosted on Github dependent on artifacts produced by this repository will be identified; as well as transitively dependent repositories, and other information retrievable from from the pom.xml file of the repository (artifacts produced, project dependencies). This information is rendered to the user through a web interface, where the user can also request further analysis of the dependent repositories to identify which sections of a dependent repositories code base rely on the analysed repository at the method call level. Through visualisations, the user is able to explore these method call level dependencies.
 
-To try out the application yourself, head over to [dependents.dev](https://dependents.dev).
+To try out the application yourself, head over to [dependents.dev](https://dependents.dev). I recommend opening this in Google Chrome or Safari.
 
 <i>A number of security keys and passwords are defined in files in this repository. These are for services deployed as part of running this application (i.e. databases), and can not be used to access external services. In some cases, where an API key for an external service is required - i.e. a Github REST API Key - a template file will be indicated that must be copied, with this information inserted. If you wish to deploy this application in a secure manner, I highly recommend changing all the currently defined keys and keeping these keys private.</i> 
 
