@@ -7,6 +7,8 @@ docker-compose-services.yml
 
 .DS_Store
 
+.DS_Store
+
 # Compiled class file
 *.class
 
@@ -41,7 +43,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -153,4 +154,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.DS_Store
 .DS_Store
