@@ -3,16 +3,17 @@ import neo4j_queries
 import unittest
 from unittest.mock import Mock
 
-# Used to mock out the Neo4j tx Class
-class Neo4jTXMock:
-    def run(match_string):
-        pass
-
-# Converts a dictionary to an object with attributes matching the dictionaries keys
+# Converts a dictionary to a class with attributes, whilst maintaining the keys
+# from https://stackoverflow.com/questions/4984647/accessing-dict-keys-like-an-attribute/29548234
 class AttrDict(dict):
     def __init__(self, *args, **kwargs):
         super(AttrDict, self).__init__(*args, **kwargs)
         self.__dict__ = self
+
+# Used to mock out the Neo4j tx Class
+class Neo4jTXMock:
+    def run(match_string):
+        pass
 
 class Neo4jTestCase(unittest.TestCase):
 
@@ -85,10 +86,69 @@ class Neo4jTestCase(unittest.TestCase):
         assert result == []
         tx.run.assert_called()
     
-    def test_create_tree_from_edges(self):
+    """
+    Validate that when createTreeFromEdges is given no edges or vertices,
+    it returns an empty list.
+    """
+    def test_create_tree_from_edges_returns_list_on_empty(self):
         edges = []
         vertices = {}
+
+        result = neo4j_queries.createTreeFromEdges(edges, vertices)
+        assert result == []    
+
+    """
+    Validate that when createTreeFromEdges returns a graph given a set of edges and vertices
+    """
+    def test_create_tree_from_edges_returns_list_on_empty(self):
+        edges = [
+            ("vertex1", "vertex2"),
+            ("vertex1", "vertex3")
+        ]
+
+        vertices = {
+            "vertex1": 
+                AttrDict({'_properties': {
+                    "id": "vertex1"
+                },
+                "_labels": ["label1"]})
+            ,
+            "vertex2": 
+                AttrDict({'_properties': {
+                    "id": "vertex1"
+                },
+                "_labels": ["label1"]})
+            ,
+            "vertex3": 
+                AttrDict(
+                    { '_properties': {
+                        "id": "vertex1"
+                    },
+                    "_labels": ["label1"]
+                    })
+        }
+
+
+        result = neo4j_queries.createTreeFromEdges(edges, vertices)
         
+        """
+        A graph structure should now exist in result:
+
+                vertex1
+                   |
+                  / \
+            vertex2  vertex3
+        """
+
+        # A single root node should remain
+        assert len(result) == 1   
+        assert result[0].get("id") == "vertex1"   
+
+        # The root node should have two children    
+        assert len(result[0].get("children")) == 2
+
+        # Assert that the two children are vertex2 and vertex3
+        assert (v in [ k.get("id") for k in result[0].get("children")] for v in ["vertex2", "vertex3"])  
 
 if __name__ == '__main__':
     unittest.main()

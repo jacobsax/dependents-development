@@ -14,6 +14,7 @@ def createTreeFromEdges(edges, vertices):
 
     for i in edges:
         parent_id, child_id = i
+
         node = nodes[child_id]
         parent = nodes[parent_id]
 
@@ -23,9 +24,7 @@ def createTreeFromEdges(edges, vertices):
             forest.remove(node)
 
     #forest is now a graph, with a single root vertex
-
     # TODO: Remove shortest paths
-    
     return forest
 
 """

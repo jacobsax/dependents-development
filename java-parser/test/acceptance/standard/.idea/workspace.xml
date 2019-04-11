@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e76107c4-963b-4838-b9b8-369fd791dfe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testing/ReversePolishNotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../dependents-visualisation-ui/src/controller/render/icicle-render.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dependents-visualisation-ui/src/controller/render/icicle-render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/DirectoryParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/DirectoryParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/ParserCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../build/tmp/src/src/main/java/com/jwu/javaparser/parser/ParserCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../build/tmp/src/src/test/java/com/jwu/javaparser/parser/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../build/tmp/src/src/test/java/com/jwu/javaparser/parser/ParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../main-dependents-service/src/neo4j_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../main-dependents-service/src/neo4j_queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../main-dependents-service/src/test_neo4j.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../main-dependents-service/src/test_neo4j.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
