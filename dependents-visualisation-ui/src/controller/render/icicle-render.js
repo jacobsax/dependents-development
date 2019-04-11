@@ -68,7 +68,15 @@ function renderIcicle(opts, data) {
             return d.y1 - d.y0;
         })
         .attr("fill", function (d) {
-            return color((d.children ? d : d.parent).data.name);
+            if (d.data.label == "Method") {
+                return "#ff6347";
+            } else if (d.data.label == "ClassOrInterface") {
+                return "#ffd700";
+            } else if (d.data.label == "Package") {
+                return '#8470ff';
+            }
+
+            return "#3182bd";
         })
         .on("click", clicked)
         .on("mouseover", function (d) {

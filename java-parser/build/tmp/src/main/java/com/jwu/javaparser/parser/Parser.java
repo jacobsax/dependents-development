@@ -13,17 +13,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 
-public class Parser {
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test_files/";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test_projects/appengine-endpoints-tictactoe-java";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test_projects/ChessOOP";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test_projects/jgrapht";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/src";
-    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test-manual-dependents/repos/javaparser";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test-manual-dependents/repos/fastjson";
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test-manual-dependents/repos/spark-demo-beginner";
-
-//    static String FILE_PATH = "/Users/jwu/3rd-year-project/Development/testing/java/JavaParser/contrib/test-manual-dependents/repos/testPay" +
+public class Parser { 
+    // the directory of a project to be analysed
+    static String FILE_PATH = "./contrib/test_files";
 
     // A collection of locations to look for jar files for type resolution
     static Collection<Path> JAR_PATHS = new ArrayList<Path>() {{
@@ -31,18 +23,19 @@ public class Parser {
         add(Paths.get(FILE_PATH)); // also look in the project being parsed
     }};
 
-//    static String projectName = "fastjson";
-//    static String projectID = "alibabafastjson";
-
-    static String projectName = "javaparser";
-    static String projectID = "comjavaparser";
+    // the name and ID of the project under analysis
+    static String projectName = "sample";
+    static String projectID = "sample";
 
     static DependencyGraph dependencyGraph;
 
     public static void main( String[] args ) throws IOException, ExportException {
+        // create an empty dependency graph to store the results of the analysis
         dependencyGraph = new DependencyGraph();
+        
+        // Use a DirectoryParser to identify and analyse all source code in the directory specified 
+        // in the FILE_PATH variable
         DirectoryParser directoryParser = new DirectoryParser(projectName, projectID, true);
-
         try {
             directoryParser.parseMethods(dependencyGraph, Paths.get(FILE_PATH), JAR_PATHS);
         } catch (Throwable t) {
@@ -50,8 +43,8 @@ public class Parser {
             // do nothing
         }
 
+        // export the produced dependency graph as a series of cypher queries
         Neo4jCypherExporter exporter = DependencyGraph.getNeo4jExporter();
-        exporter.exportGraph(dependencyGraph, new FileWriter("javaparser-2.cypher"));
-//        DependencyGraph.saveGraphToFile(exporter, dependencyGraph, "spark.csv");
+        exporter.exportGraph(dependencyGraph, new FileWriter("output.cypher"));
     }
 }

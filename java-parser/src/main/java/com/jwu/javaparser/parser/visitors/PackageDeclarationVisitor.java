@@ -26,7 +26,6 @@ public class PackageDeclarationVisitor extends VoidVisitorAdapter<Void> {
      */
     @Override
     public void visit(PackageDeclaration d, Void arg) {
-
         System.out.println("Package found: " + d.getName());
         this.graph.claimPackageForProject(this.projectName, this.projectID, d.getNameAsString());
     }

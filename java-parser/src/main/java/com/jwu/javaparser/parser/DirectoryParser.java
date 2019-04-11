@@ -156,7 +156,7 @@ public class DirectoryParser {
         VoidVisitor<?> methodVisitor = null;
         if (this.parseAll) {
             overloadVisitor = new MethodOverloadOverrideVisitor(graph);
-            methodVisitor = new MethodCallVisitor(graph);
+            methodVisitor = new MethodCallVisitor(graph, this.projectName, this.projectID);
         }
 
         /*

@@ -84,7 +84,10 @@ class Neo4jTestCase(unittest.TestCase):
         result = neo4j_queries.dependents_from_node(tx, "testgroup", "testproject", None, None)
         assert result == []
         tx.run.assert_called()
-
+    
+    def test_create_tree_from_edges(self):
+        edges = []
+        vertices = {}
         
 
 if __name__ == '__main__':

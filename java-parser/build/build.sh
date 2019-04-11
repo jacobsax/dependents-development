@@ -1,7 +1,8 @@
 #!/bin/bash
 
+if [ -d ./tmp ]; then rm -rf ./tmp; fi
 
-mkdir -p ./tmp
+mkdir ./tmp
 cp -r ../src ./tmp/src
 cp ../pom.xml ./tmp/pom.xml
 

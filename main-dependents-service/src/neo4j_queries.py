@@ -1,5 +1,9 @@
 import utils
 
+"""
+createTreeFromEdges constructs a directed graph structure from a set of directed edges and a set of vertices. The set
+of edges and vertices used must contain a single root vertex.
+"""
 def createTreeFromEdges(edges, vertices):
     nodes = {}
     forest = []
@@ -10,7 +14,6 @@ def createTreeFromEdges(edges, vertices):
 
     for i in edges:
         parent_id, child_id = i
-        # print (nodes[child_id])
         node = nodes[child_id]
         parent = nodes[parent_id]
 
@@ -19,9 +22,15 @@ def createTreeFromEdges(edges, vertices):
         if (node in forest):
             forest.remove(node)
 
+    #forest is now a graph, with a single root vertex
+
+    # TODO: Remove shortest paths
+    
     return forest
 
-# retrieves dependent projects of the specific node
+"""
+ast_tree_dependent retrieves the complete AST tree of a specified dependent project, which is dependent on a specified node of a project under analysis
+"""
 def ast_tree_dependent(tx, group, project, dependent_group, dependent_project, sub_node_label, sub_node_id):
 
     if (sub_node_label != None and sub_node_id != None):

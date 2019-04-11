@@ -1,16 +1,16 @@
-package com.jwu.javaparser.parser;
+package testing;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 /**
- * Unit test for Parser.
+ * Unit test for simple App.
  */
-public class ParserTest
+public class AppTest 
 {
     /**
-     * An Example Test
+     * Rigorous Test :-)
      */
     @Test
     public void shouldAnswerWithTrue()
