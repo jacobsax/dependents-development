@@ -47,6 +47,8 @@ Then run:
     $ ./build.sh
     $ docker compose -f docker-compose.yml up -d
     $ docker stack deploy -c docker-compose-services.yml services
+    
+The final initial deployment step is to populate a MySQL database with a cache of all pom.xml files and associated metadata on GitHub. This cache is used to search for dependent repositories. Follow these instructions to achieve this.
 
 To tear down the services run:
 
