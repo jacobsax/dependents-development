@@ -1,7 +1,7 @@
 /*
 This work is Copyright 2019 Jacob Unwin, and released under the MIT license.
 
-The origional template Grizzly2 Server application used to produce this 
+The original template Grizzly2 Server application used to produce this 
 work is Copyright 2016 Janus Friis Nielsen.
 
 Licensed under the Apache License, Version 2.0 (the "License");
