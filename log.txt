@@ -1,3702 +1,0 @@
-Parsing project: mishraak/UMLParser
-using dir /tmp/tmpoigaqabr
-git clone https://github.com/mishraak/UMLParser.git
-[INFO] Scanning for projects...
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
-3/7 KB   6/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (7 KB at 10.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
-3/33 KB   5/33 KB   8/33 KB   11/33 KB   13/33 KB   16/33 KB   19/33 KB   21/33 KB   24/33 KB   27/33 KB   29/33 KB   32/33 KB   33/33 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 KB at 924.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom
-3/6 KB     3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom (6 KB at 228.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
-3/27 KB   6/27 KB   9/27 KB   11/27 KB   14/27 KB   16/27 KB   19/27 KB   22/27 KB   25/27 KB   27/27 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar (27 KB at 513.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom
-3/21 KB    5/21 KB   8/21 KB   11/21 KB   13/21 KB   16/21 KB   19/21 KB   21/21 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom (21 KB at 655.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
-3/11 KB    5/11 KB   8/11 KB   11/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom (11 KB at 659.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
-3/122 KB   6/122 KB   9/122 KB   11/122 KB   14/122 KB   16/122 KB   19/122 KB   22/122 KB   25/122 KB   27/122 KB   30/122 KB   32/122 KB   36/122 KB   40/122 KB   44/122 KB   48/122 KB   52/122 KB   56/122 KB   60/122 KB   64/122 KB   68/122 KB   72/122 KB   76/122 KB   80/122 KB   84/122 KB   88/122 KB   92/122 KB   96/122 KB   100/122 KB   104/122 KB   108/122 KB   112/122 KB   116/122 KB   120/122 KB   122/122 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar (122 KB at 3036.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.pom
-3/5 KB       5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.pom (5 KB at 251.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.jar
-3/31 KB   5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.jar (31 KB at 1234.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.pom
-3/17 KB    6/17 KB   9/17 KB   11/17 KB   14/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.pom (17 KB at 1023.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.jar
-3/212 KB   5/212 KB   8/212 KB   11/212 KB   13/212 KB   16/212 KB   19/212 KB   21/212 KB   24/212 KB   27/212 KB   29/212 KB   32/212 KB   36/212 KB   40/212 KB   44/212 KB   48/212 KB   52/212 KB   56/212 KB   60/212 KB   64/212 KB   68/212 KB   72/212 KB   76/212 KB   80/212 KB   84/212 KB   88/212 KB   92/212 KB   96/212 KB   100/212 KB   104/212 KB   108/212 KB   112/212 KB   116/212 KB   120/212 KB   124/212 KB   128/212 KB   132/212 KB   136/212 KB   140/212 KB   144/212 KB   148/212 KB   152/212 KB   156/212 KB   160/212 KB   164/212 KB   168/212 KB   172/212 KB   176/212 KB   180/212 KB   184/212 KB   188/212 KB   192/212 KB   196/212 KB   200/212 KB   204/212 KB   208/212 KB   212/212 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.jar (212 KB at 2323.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.pom
-4/12 KB      8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.pom (12 KB at 532.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar
-4/150 KB   8/150 KB   12/150 KB   16/150 KB   20/150 KB   24/150 KB   28/150 KB   32/150 KB   36/150 KB   40/150 KB   44/150 KB   48/150 KB   52/150 KB   56/150 KB   60/150 KB   64/150 KB   68/150 KB   72/150 KB   76/150 KB   80/150 KB   84/150 KB   88/150 KB   92/150 KB   96/150 KB   100/150 KB   104/150 KB   108/150 KB   112/150 KB   116/150 KB   120/150 KB   124/150 KB   128/150 KB   132/150 KB   136/150 KB   140/150 KB   144/150 KB   148/150 KB   150/150 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar (150 KB at 3561.8 KB/sec)
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building umlgenerator 0.0.1-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/plantuml/plantuml/7999/plantuml-7999.pom
-3/6 KB       5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/plantuml/plantuml/7999/plantuml-7999.pom (6 KB at 113.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
-3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom (4 KB at 249.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/2.1.0/javaparser-core-2.1.0.pom
-3/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/2.1.0/javaparser-core-2.1.0.pom (5 KB at 51.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/2.1.0/javaparser-parent-2.1.0.pom
-3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/2.1.0/javaparser-parent-2.1.0.pom (6 KB at 36.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.pom
-922/922 B               Downloaded: https://repo.maven.apache.org/maven2/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.pom (922 B at 60.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/plantuml/plantuml/7999/plantuml-7999.jar
-Downloading: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/2.1.0/javaparser-core-2.1.0.jar
-Downloading: https://repo.maven.apache.org/maven2/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar
-3/312 KB    5/312 KB   8/312 KB   11/312 KB   13/312 KB   16/312 KB   19/312 KB   21/312 KB   24/312 KB   27/312 KB   29/312 KB   32/312 KB   3/129 KB   32/312 KB   5/129 KB   32/312 KB   8/129 KB   32/312 KB   11/129 KB   32/312 KB   11/129 KB   36/312 KB   11/129 KB   40/312 KB   11/129 KB   44/312 KB   11/129 KB   48/312 KB   11/129 KB   52/312 KB   11/129 KB   56/312 KB   11/129 KB   60/312 KB   11/129 KB   64/312 KB   11/129 KB   68/312 KB   11/129 KB   72/312 KB   11/129 KB   76/312 KB   11/129 KB   76/312 KB   13/129 KB   76/312 KB   16/129 KB   76/312 KB   19/129 KB   76/312 KB   21/129 KB   76/312 KB   24/129 KB   76/312 KB   27/129 KB   76/312 KB   29/129 KB   76/312 KB   32/129 KB   80/312 KB   32/129 KB   84/312 KB   32/129 KB   88/312 KB   32/129 KB   92/312 KB   32/129 KB   96/312 KB   32/129 KB   100/312 KB   32/129 KB   104/312 KB   32/129 KB   108/312 KB   32/129 KB   112/312 KB   32/129 KB   112/312 KB   36/129 KB   112/312 KB   40/129 KB   112/312 KB   44/129 KB   112/312 KB   48/129 KB   112/312 KB   52/129 KB   112/312 KB   56/129 KB   112/312 KB   60/129 KB   112/312 KB   64/129 KB   112/312 KB   68/129 KB   112/312 KB   72/129 KB   112/312 KB   76/129 KB   112/312 KB   80/129 KB   116/312 KB   80/129 KB   120/312 KB   80/129 KB   124/312 KB   80/129 KB   128/312 KB   80/129 KB   132/312 KB   80/129 KB   136/312 KB   80/129 KB   140/312 KB   80/129 KB   144/312 KB   80/129 KB   148/312 KB   80/129 KB   152/312 KB   80/129 KB   152/312 KB   84/129 KB   152/312 KB   88/129 KB   152/312 KB   92/129 KB   152/312 KB   96/129 KB   152/312 KB   100/129 KB   152/312 KB   104/129 KB   152/312 KB   108/129 KB   152/312 KB   112/129 KB   152/312 KB   116/129 KB   152/312 KB   120/129 KB   152/312 KB   124/129 KB   152/312 KB   128/129 KB   152/312 KB   129/129 KB   156/312 KB   129/129 KB   160/312 KB   129/129 KB   164/312 KB   129/129 KB   168/312 KB   129/129 KB   172/312 KB   129/129 KB   176/312 KB   129/129 KB   180/312 KB   129/129 KB   184/312 KB   129/129 KB   188/312 KB   129/129 KB   192/312 KB   129/129 KB   196/312 KB   129/129 KB   200/312 KB   129/129 KB   204/312 KB   129/129 KB   208/312 KB   129/129 KB   212/312 KB   129/129 KB   216/312 KB   129/129 KB   220/312 KB   129/129 KB   224/312 KB   129/129 KB                             228/312 KB   129/129 KB   Downloaded: https://repo.maven.apache.org/maven2/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar (129 KB at 838.6 KB/sec)
-232/312 KB                236/312 KB   240/312 KB   244/312 KB   248/312 KB   252/312 KB   256/312 KB   260/312 KB   264/312 KB   268/312 KB   272/312 KB   276/312 KB   280/312 KB   284/312 KB   288/312 KB   292/312 KB   296/312 KB   300/312 KB   304/312 KB   308/312 KB   312/312 KB   312/312 KB                Downloaded: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/2.1.0/javaparser-core-2.1.0.jar (312 KB at 1227.2 KB/sec)
-3/2623 KB    5/2623 KB   8/2623 KB   11/2623 KB   13/2623 KB   16/2623 KB   19/2623 KB   21/2623 KB   24/2623 KB   27/2623 KB   29/2623 KB   32/2623 KB   36/2623 KB   40/2623 KB   44/2623 KB   48/2623 KB   52/2623 KB   56/2623 KB   60/2623 KB   64/2623 KB   68/2623 KB   72/2623 KB   76/2623 KB   80/2623 KB   84/2623 KB   88/2623 KB   92/2623 KB   96/2623 KB   100/2623 KB   104/2623 KB   108/2623 KB   112/2623 KB   116/2623 KB   120/2623 KB   124/2623 KB   128/2623 KB   132/2623 KB   136/2623 KB   140/2623 KB   144/2623 KB   148/2623 KB   152/2623 KB   156/2623 KB   160/2623 KB   164/2623 KB   168/2623 KB   172/2623 KB   176/2623 KB   180/2623 KB   184/2623 KB   188/2623 KB   192/2623 KB   196/2623 KB   200/2623 KB   204/2623 KB   208/2623 KB   212/2623 KB   216/2623 KB   220/2623 KB   224/2623 KB   228/2623 KB   232/2623 KB   236/2623 KB   240/2623 KB   244/2623 KB   248/2623 KB   252/2623 KB   256/2623 KB   260/2623 KB   264/2623 KB   268/2623 KB   272/2623 KB   276/2623 KB   280/2623 KB   284/2623 KB   288/2623 KB   292/2623 KB   296/2623 KB   300/2623 KB   304/2623 KB   308/2623 KB   312/2623 KB   316/2623 KB   320/2623 KB   324/2623 KB   328/2623 KB   332/2623 KB   336/2623 KB   340/2623 KB   344/2623 KB   348/2623 KB   352/2623 KB   356/2623 KB   360/2623 KB   364/2623 KB   368/2623 KB   372/2623 KB   376/2623 KB   380/2623 KB   384/2623 KB   388/2623 KB   392/2623 KB   396/2623 KB   400/2623 KB   404/2623 KB   408/2623 KB   412/2623 KB   416/2623 KB   420/2623 KB   424/2623 KB   428/2623 KB   432/2623 KB   436/2623 KB   440/2623 KB   444/2623 KB   448/2623 KB   452/2623 KB   456/2623 KB   460/2623 KB   464/2623 KB   468/2623 KB   472/2623 KB   476/2623 KB   480/2623 KB   484/2623 KB   488/2623 KB   492/2623 KB   496/2623 KB   500/2623 KB   504/2623 KB   508/2623 KB   512/2623 KB   516/2623 KB   520/2623 KB   524/2623 KB   528/2623 KB   532/2623 KB   536/2623 KB   540/2623 KB   544/2623 KB   548/2623 KB   552/2623 KB   556/2623 KB   560/2623 KB   564/2623 KB   568/2623 KB   572/2623 KB   576/2623 KB   580/2623 KB   584/2623 KB   588/2623 KB   592/2623 KB   596/2623 KB   600/2623 KB   604/2623 KB   608/2623 KB   612/2623 KB   616/2623 KB   620/2623 KB   624/2623 KB   628/2623 KB   632/2623 KB   636/2623 KB   640/2623 KB   644/2623 KB   648/2623 KB   652/2623 KB   656/2623 KB   660/2623 KB   664/2623 KB   668/2623 KB   672/2623 KB   676/2623 KB   680/2623 KB   684/2623 KB   688/2623 KB   692/2623 KB   696/2623 KB   700/2623 KB   704/2623 KB   708/2623 KB   712/2623 KB   716/2623 KB   720/2623 KB   724/2623 KB   728/2623 KB   732/2623 KB   736/2623 KB   740/2623 KB   744/2623 KB   748/2623 KB   752/2623 KB   756/2623 KB   760/2623 KB   764/2623 KB   768/2623 KB   772/2623 KB   776/2623 KB   780/2623 KB   784/2623 KB   788/2623 KB   792/2623 KB   796/2623 KB   800/2623 KB   804/2623 KB   808/2623 KB   812/2623 KB   816/2623 KB   820/2623 KB   824/2623 KB   828/2623 KB   832/2623 KB   836/2623 KB   840/2623 KB   844/2623 KB   848/2623 KB   852/2623 KB   856/2623 KB   860/2623 KB   864/2623 KB   868/2623 KB   872/2623 KB   876/2623 KB   880/2623 KB   884/2623 KB   888/2623 KB   892/2623 KB   896/2623 KB   900/2623 KB   904/2623 KB   908/2623 KB   912/2623 KB   916/2623 KB   920/2623 KB   924/2623 KB   928/2623 KB   932/2623 KB   936/2623 KB   940/2623 KB   944/2623 KB   948/2623 KB   952/2623 KB   956/2623 KB   960/2623 KB   964/2623 KB   968/2623 KB   972/2623 KB   976/2623 KB   980/2623 KB   984/2623 KB   988/2623 KB   992/2623 KB   996/2623 KB   1000/2623 KB   1004/2623 KB   1008/2623 KB   1012/2623 KB   1016/2623 KB   1020/2623 KB   1024/2623 KB   1028/2623 KB   1032/2623 KB   1036/2623 KB   1040/2623 KB   1044/2623 KB   1048/2623 KB   1052/2623 KB   1056/2623 KB   1060/2623 KB   1064/2623 KB   1068/2623 KB   1072/2623 KB   1076/2623 KB   1080/2623 KB   1084/2623 KB   1088/2623 KB   1092/2623 KB   1096/2623 KB   1100/2623 KB   1104/2623 KB   1108/2623 KB   1112/2623 KB   1116/2623 KB   1120/2623 KB   1124/2623 KB   1128/2623 KB   1132/2623 KB   1136/2623 KB   1140/2623 KB   1144/2623 KB   1148/2623 KB   1152/2623 KB   1156/2623 KB   1160/2623 KB   1164/2623 KB   1168/2623 KB   1172/2623 KB   1176/2623 KB   1180/2623 KB   1184/2623 KB   1188/2623 KB   1192/2623 KB   1196/2623 KB   1200/2623 KB   1204/2623 KB   1208/2623 KB   1212/2623 KB   1216/2623 KB   1220/2623 KB   1224/2623 KB   1228/2623 KB   1232/2623 KB   1236/2623 KB   1240/2623 KB   1244/2623 KB   1248/2623 KB   1252/2623 KB   1256/2623 KB   1260/2623 KB   1264/2623 KB   1268/2623 KB   1272/2623 KB   1276/2623 KB   1280/2623 KB   1284/2623 KB   1288/2623 KB   1292/2623 KB   1296/2623 KB   1300/2623 KB   1304/2623 KB   1308/2623 KB   1312/2623 KB   1316/2623 KB   1320/2623 KB   1324/2623 KB   1328/2623 KB   1332/2623 KB   1336/2623 KB   1340/2623 KB   1344/2623 KB   1348/2623 KB   1352/2623 KB   1356/2623 KB   1360/2623 KB   1364/2623 KB   1368/2623 KB   1372/2623 KB   1376/2623 KB   1380/2623 KB   1384/2623 KB   1388/2623 KB   1392/2623 KB   1396/2623 KB   1400/2623 KB   1404/2623 KB   1408/2623 KB   1412/2623 KB   1416/2623 KB   1420/2623 KB   1424/2623 KB   1428/2623 KB   1432/2623 KB   1436/2623 KB   1440/2623 KB   1444/2623 KB   1448/2623 KB   1452/2623 KB   1456/2623 KB   1460/2623 KB   1464/2623 KB   1468/2623 KB   1472/2623 KB   1476/2623 KB   1480/2623 KB   1484/2623 KB   1488/2623 KB   1492/2623 KB   1496/2623 KB   1500/2623 KB   1504/2623 KB   1508/2623 KB   1512/2623 KB   1516/2623 KB   1520/2623 KB   1524/2623 KB   1528/2623 KB   1532/2623 KB   1536/2623 KB   1540/2623 KB   1544/2623 KB   1548/2623 KB   1552/2623 KB   1556/2623 KB   1560/2623 KB   1564/2623 KB   1568/2623 KB   1572/2623 KB   1576/2623 KB   1580/2623 KB   1584/2623 KB   1588/2623 KB   1592/2623 KB   1596/2623 KB   1600/2623 KB   1604/2623 KB   1608/2623 KB   1612/2623 KB   1616/2623 KB   1620/2623 KB   1624/2623 KB   1628/2623 KB   1632/2623 KB   1636/2623 KB   1640/2623 KB   1644/2623 KB   1648/2623 KB   1652/2623 KB   1656/2623 KB   1660/2623 KB   1664/2623 KB   1668/2623 KB   1672/2623 KB   1676/2623 KB   1680/2623 KB   1684/2623 KB   1688/2623 KB   1692/2623 KB   1696/2623 KB   1700/2623 KB   1704/2623 KB   1708/2623 KB   1712/2623 KB   1716/2623 KB   1720/2623 KB   1724/2623 KB   1728/2623 KB   1732/2623 KB   1736/2623 KB   1740/2623 KB   1744/2623 KB   1748/2623 KB   1752/2623 KB   1756/2623 KB   1760/2623 KB   1764/2623 KB   1768/2623 KB   1772/2623 KB   1776/2623 KB   1780/2623 KB   1784/2623 KB   1788/2623 KB   1792/2623 KB   1796/2623 KB   1800/2623 KB   1804/2623 KB   1808/2623 KB   1812/2623 KB   1816/2623 KB   1820/2623 KB   1824/2623 KB   1828/2623 KB   1832/2623 KB   1836/2623 KB   1840/2623 KB   1844/2623 KB   1848/2623 KB   1852/2623 KB   1856/2623 KB   1860/2623 KB   1864/2623 KB   1868/2623 KB   1872/2623 KB   1876/2623 KB   1880/2623 KB   1884/2623 KB   1888/2623 KB   1892/2623 KB   1896/2623 KB   1900/2623 KB   1904/2623 KB   1908/2623 KB   1912/2623 KB   1916/2623 KB   1920/2623 KB   1924/2623 KB   1928/2623 KB   1932/2623 KB   1936/2623 KB   1940/2623 KB   1944/2623 KB   1948/2623 KB   1952/2623 KB   1956/2623 KB   1960/2623 KB   1963/2623 KB   1967/2623 KB   1971/2623 KB   1975/2623 KB   1979/2623 KB   1983/2623 KB   1987/2623 KB   1991/2623 KB   1995/2623 KB   1999/2623 KB   2003/2623 KB   2007/2623 KB   2011/2623 KB   2015/2623 KB   2019/2623 KB   2023/2623 KB   2027/2623 KB   2031/2623 KB   2035/2623 KB   2039/2623 KB   2043/2623 KB   2047/2623 KB   2051/2623 KB   2055/2623 KB   2059/2623 KB   2063/2623 KB   2067/2623 KB   2071/2623 KB   2075/2623 KB   2079/2623 KB   2083/2623 KB   2087/2623 KB   2091/2623 KB   2095/2623 KB   2099/2623 KB   2103/2623 KB   2107/2623 KB   2111/2623 KB   2115/2623 KB   2119/2623 KB   2123/2623 KB   2127/2623 KB   2131/2623 KB   2135/2623 KB   2139/2623 KB   2143/2623 KB   2147/2623 KB   2151/2623 KB   2155/2623 KB   2159/2623 KB   2163/2623 KB   2167/2623 KB   2171/2623 KB   2175/2623 KB   2179/2623 KB   2183/2623 KB   2187/2623 KB   2191/2623 KB   2195/2623 KB   2199/2623 KB   2203/2623 KB   2207/2623 KB   2211/2623 KB   2215/2623 KB   2219/2623 KB   2223/2623 KB   2227/2623 KB   2231/2623 KB   2235/2623 KB   2239/2623 KB   2243/2623 KB   2247/2623 KB   2251/2623 KB   2255/2623 KB   2259/2623 KB   2263/2623 KB   2267/2623 KB   2271/2623 KB   2275/2623 KB   2279/2623 KB   2283/2623 KB   2287/2623 KB   2291/2623 KB   2295/2623 KB   2299/2623 KB   2303/2623 KB   2307/2623 KB   2311/2623 KB   2315/2623 KB   2319/2623 KB   2323/2623 KB   2327/2623 KB   2331/2623 KB   2335/2623 KB   2339/2623 KB   2343/2623 KB   2347/2623 KB   2351/2623 KB   2355/2623 KB   2359/2623 KB   2363/2623 KB   2367/2623 KB   2371/2623 KB   2375/2623 KB   2379/2623 KB   2383/2623 KB   2387/2623 KB   2391/2623 KB   2391/2623 KB   2395/2623 KB   2399/2623 KB   2403/2623 KB   2407/2623 KB   2411/2623 KB   2415/2623 KB   2419/2623 KB   2423/2623 KB   2427/2623 KB   2431/2623 KB   2435/2623 KB   2439/2623 KB   2443/2623 KB   2447/2623 KB   2451/2623 KB   2455/2623 KB   2459/2623 KB   2463/2623 KB   2467/2623 KB   2471/2623 KB   2475/2623 KB   2479/2623 KB   2483/2623 KB   2487/2623 KB   2491/2623 KB   2495/2623 KB   2499/2623 KB   2503/2623 KB   2507/2623 KB   2511/2623 KB   2515/2623 KB   2519/2623 KB   2523/2623 KB   2527/2623 KB   2531/2623 KB   2535/2623 KB   2539/2623 KB   2543/2623 KB   2547/2623 KB   2551/2623 KB   2555/2623 KB   2559/2623 KB   2563/2623 KB   2567/2623 KB   2571/2623 KB   2575/2623 KB   2579/2623 KB   2583/2623 KB   2587/2623 KB   2591/2623 KB   2595/2623 KB   2599/2623 KB   2603/2623 KB   2607/2623 KB   2611/2623 KB   2615/2623 KB   2619/2623 KB   2623/2623 KB   2623/2623 KB                  Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/plantuml/plantuml/7999/plantuml-7999.jar (2623 KB at 2232.0 KB/sec)
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ umlgenerator ---
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.pom
-2/2 KB                  Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.pom (2 KB at 109.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-10/doxia-1.0-alpha-10.pom
-3/9 KB   5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-10/doxia-1.0-alpha-10.pom (9 KB at 639.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom
-3/20 KB   5/20 KB   8/20 KB   11/20 KB   13/20 KB   16/20 KB   19/20 KB   20/20 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/6/maven-parent-6.pom (20 KB at 1305.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom
-3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.pom (3 KB at 165.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
-3/10 KB   5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom (10 KB at 701.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
-3/23 KB    6/23 KB   9/23 KB   11/23 KB   14/23 KB   16/23 KB   19/23 KB   22/23 KB   23/23 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom (23 KB at 1262.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.5/maven-reporting-impl-2.0.5.pom
-3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.5/maven-reporting-impl-2.0.5.pom (5 KB at 217.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.pom
-3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.pom (6 KB at 440.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/11/maven-shared-components-11.pom
-3/9 KB   5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/11/maven-shared-components-11.pom (9 KB at 428.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom
-3/13 KB   5/13 KB   8/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom (13 KB at 1607.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom
-3/18 KB    6/18 KB   9/18 KB   11/18 KB   14/18 KB   16/18 KB   18/18 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom (18 KB at 899.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
-2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom (2 KB at 57.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.pom
-3/9 KB   5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.pom (9 KB at 253.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
-357/357 B               Downloaded: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom (357 B at 9.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom
-866/866 B               Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom (866 B at 42.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-digester/commons-digester/1.6/commons-digester-1.6.pom
-974/974 B               Downloaded: https://repo.maven.apache.org/maven2/commons-digester/commons-digester/1.6/commons-digester-1.6.pom (974 B at 59.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom
-3/3 KB      3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom (3 KB at 322.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0/commons-logging-1.0.pom
-163/163 B               Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0/commons-logging-1.0.pom (163 B at 13.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.0/commons-collections-2.0.pom
-171/171 B               Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.0/commons-collections-2.0.pom (171 B at 10.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
-3/4 KB      4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.pom (4 KB at 296.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom
-2/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom (3 KB at 183.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
-3/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom (6 KB at 321.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/2.0.2/xml-apis-2.0.2.pom
-346/346 B               Downloaded: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/2.0.2/xml-apis-2.0.2.pom (346 B at 26.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.3/plexus-archiver-2.3.pom
-3/4 KB      4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.3/plexus-archiver-2.3.pom (4 KB at 156.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.6/plexus-io-2.0.6.pom
-3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.6/plexus-io-2.0.6.pom (3 KB at 215.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.9/plexus-utils-3.0.9.pom
-3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.9/plexus-utils-3.0.9.pom (4 KB at 219.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.pom
-2/4 KB   4/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.pom (4 KB at 473.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom
-3/9 KB   6/9 KB   9/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom (9 KB at 274.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/9/maven-parent-9.pom
-3/33 KB   6/33 KB   9/33 KB   11/33 KB   14/33 KB   16/33 KB   19/33 KB   22/33 KB   25/33 KB   27/33 KB   30/33 KB   32/33 KB   33/33 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/9/maven-parent-9.pom (33 KB at 2672.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom
-3/4 KB     4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom (4 KB at 495.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom
-3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom (3 KB at 217.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom
-3/21 KB   5/21 KB   8/21 KB   11/21 KB   13/21 KB   16/21 KB   19/21 KB   21/21 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/7/maven-parent-7.pom (21 KB at 797.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
-765/765 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom (765 B at 39.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom
-3/13 KB     5/13 KB   8/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.2/maven-2.0.2.pom (13 KB at 1429.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom
-767/767 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom (767 B at 62.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
-2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom (2 KB at 68.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom (2 KB at 116.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom
-588/588 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom (588 B at 95.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom
-3/7 KB      6/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom (7 KB at 694.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
-3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom (3 KB at 138.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom
-3/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom (6 KB at 470.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom
-3/10 KB   6/10 KB   9/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom (10 KB at 870.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.4/maven-dependency-analyzer-1.4.pom
-3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.4/maven-dependency-analyzer-1.4.pom (6 KB at 419.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.pom
-266/266 B               Downloaded: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.pom (266 B at 14.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/asm/asm-parent/3.3.1/asm-parent-3.3.1.pom
-3/5 KB      5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/asm/asm-parent/3.3.1/asm-parent-3.3.1.pom (5 KB at 528.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.5/maven-project-2.0.5.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.5/maven-project-2.0.5.pom (2 KB at 94.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.5/maven-2.0.5.pom
-3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.5/maven-2.0.5.pom (6 KB at 506.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.5/maven-settings-2.0.5.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.5/maven-settings-2.0.5.pom (2 KB at 181.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.5/maven-model-2.0.5.pom
-3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.5/maven-model-2.0.5.pom (3 KB at 332.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.5/maven-profile-2.0.5.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.5/maven-profile-2.0.5.pom (2 KB at 269.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.5/maven-artifact-manager-2.0.5.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.5/maven-artifact-manager-2.0.5.pom (2 KB at 119.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.5/maven-repository-metadata-2.0.5.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.5/maven-repository-metadata-2.0.5.pom (2 KB at 60.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.pom
-727/727 B               Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.pom (727 B at 101.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom
-3/4 KB      4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.pom (4 KB at 333.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.pom (2 KB at 175.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom
-3/12 KB   5/12 KB   8/12 KB   11/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.8/maven-2.0.8.pom (12 KB at 454.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom
-3/4 KB     4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.pom (4 KB at 306.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom
-3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.pom (3 KB at 139.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom
-3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.pom (3 KB at 251.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.pom (2 KB at 248.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
-3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom (3 KB at 62.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.pom (2 KB at 68.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom (2 KB at 72.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom
-2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.pom (2 KB at 112.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
-3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom (4 KB at 207.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-invoker/2.0.11/maven-invoker-2.0.11.pom
-3/5 KB   5/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-invoker/2.0.11/maven-invoker-2.0.11.pom (5 KB at 291.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
-3/10 KB   6/10 KB   9/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom (10 KB at 828.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
-3/23 KB    5/23 KB   8/23 KB   11/23 KB   13/23 KB   16/23 KB   19/23 KB   21/23 KB   23/23 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom (23 KB at 1473.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom
-3/13 KB    6/13 KB   9/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom (13 KB at 1221.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/9/commons-parent-9.pom
-3/22 KB    5/22 KB   8/22 KB   11/22 KB   13/22 KB   16/22 KB   19/22 KB   21/22 KB   22/22 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/9/commons-parent-9.pom (22 KB at 1647.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.5/maven-reporting-impl-2.0.5.jar
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.jar
-Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.jar
-3/11 KB    6/11 KB   9/11 KB   11/11 KB   Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar
-           Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar (11 KB at 667.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
-3/185 KB   5/185 KB   8/185 KB   11/185 KB   13/185 KB   16/185 KB   19/185 KB   21/185 KB   24/185 KB   27/185 KB   29/185 KB   32/185 KB   36/185 KB   40/185 KB   44/185 KB   48/185 KB   52/185 KB   56/185 KB   60/185 KB   64/185 KB   68/185 KB   72/185 KB   76/185 KB   80/185 KB   84/185 KB   88/185 KB   92/185 KB   96/185 KB   100/185 KB   104/185 KB   108/185 KB   112/185 KB   116/185 KB   120/185 KB   124/185 KB   128/185 KB   132/185 KB   136/185 KB   140/185 KB   144/185 KB   148/185 KB   152/185 KB   156/185 KB   160/185 KB   164/185 KB   168/185 KB   172/185 KB   176/185 KB   180/185 KB   184/185 KB   185/185 KB   3/21 KB   185/185 KB   5/21 KB   185/185 KB   8/21 KB   185/185 KB   11/21 KB   185/185 KB   13/21 KB   185/185 KB   16/21 KB   185/185 KB   19/21 KB   185/185 KB   21/21 KB   185/185 KB   3/107 KB   21/21 KB   185/185 KB   5/107 KB   21/21 KB   185/185 KB   8/107 KB   21/21 KB   185/185 KB   11/107 KB   21/21 KB   185/185 KB   13/107 KB   21/21 KB   185/185 KB   16/107 KB   21/21 KB   185/185 KB   19/107 KB   21/21 KB   185/185 KB   21/107 KB   21/21 KB   185/185 KB   24/107 KB   21/21 KB   185/185 KB   27/107 KB   21/21 KB   185/185 KB   29/107 KB   21/21 KB   185/185 KB   32/107 KB   21/21 KB   185/185 KB   36/107 KB   21/21 KB   185/185 KB   40/107 KB   21/21 KB   185/185 KB   44/107 KB   21/21 KB   185/185 KB   48/107 KB   21/21 KB   185/185 KB   52/107 KB   21/21 KB   185/185 KB   56/107 KB   21/21 KB   185/185 KB   60/107 KB   21/21 KB   185/185 KB   64/107 KB   21/21 KB   185/185 KB   68/107 KB   21/21 KB   185/185 KB   72/107 KB   21/21 KB   185/185 KB   76/107 KB   21/21 KB   185/185 KB   80/107 KB   21/21 KB   185/185 KB   84/107 KB   21/21 KB   185/185 KB   88/107 KB   21/21 KB   185/185 KB   92/107 KB   21/21 KB   185/185 KB   96/107 KB   21/21 KB   185/185 KB   100/107 KB   21/21 KB   185/185 KB   104/107 KB   21/21 KB   185/185 KB   107/107 KB   21/21 KB   185/185 KB   107/107 KB   21/21 KB   4/89 KB   185/185 KB   107/107 KB   21/21 KB   8/89 KB   185/185 KB   107/107 KB   21/21 KB   12/89 KB   185/185 KB   107/107 KB   21/21 KB   16/89 KB   185/185 KB   107/107 KB   21/21 KB   20/89 KB   185/185 KB   107/107 KB   21/21 KB   24/89 KB   185/185 KB   107/107 KB   21/21 KB   28/89 KB   185/185 KB   107/107 KB   21/21 KB   32/89 KB   185/185 KB   107/107 KB   21/21 KB   36/89 KB   185/185 KB   107/107 KB   21/21 KB   40/89 KB   185/185 KB   107/107 KB   21/21 KB   44/89 KB   185/185 KB   107/107 KB   21/21 KB   48/89 KB   185/185 KB   107/107 KB   21/21 KB   52/89 KB   185/185 KB   107/107 KB   21/21 KB   56/89 KB   185/185 KB   107/107 KB   21/21 KB   60/89 KB   185/185 KB   107/107 KB   21/21 KB   64/89 KB   185/185 KB   107/107 KB   21/21 KB   68/89 KB   185/185 KB   107/107 KB   21/21 KB   72/89 KB   185/185 KB   107/107 KB   21/21 KB   76/89 KB   185/185 KB   107/107 KB   21/21 KB   80/89 KB   185/185 KB   107/107 KB   21/21 KB   84/89 KB   185/185 KB   107/107 KB   21/21 KB   88/89 KB   185/185 KB   107/107 KB   21/21 KB   89/89 KB   185/185 KB                                                   Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.jar (107 KB at 1836.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-digester/commons-digester/1.6/commons-digester-1.6.jar
-                                                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.5/maven-reporting-impl-2.0.5.jar (21 KB at 324.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar
-4/38 KB   89/89 KB   185/185 KB                 8/38 KB   89/89 KB   185/185 KB   12/38 KB   89/89 KB   185/185 KB   16/38 KB   89/89 KB   185/185 KB   20/38 KB   89/89 KB   185/185 KB   24/38 KB   89/89 KB   185/185 KB   28/38 KB   89/89 KB   185/185 KB   32/38 KB   89/89 KB   185/185 KB   36/38 KB   89/89 KB   185/185 KB   38/38 KB   89/89 KB   185/185 KB                                      Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar (89 KB at 1202.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
-                                   Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar (38 KB at 436.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.3/plexus-archiver-2.3.jar
-4/183 KB   185/185 KB              8/183 KB   185/185 KB   12/183 KB   185/185 KB   16/183 KB   185/185 KB   20/183 KB   185/185 KB   24/183 KB   185/185 KB   28/183 KB   185/185 KB   32/183 KB   185/185 KB   36/183 KB   185/185 KB   40/183 KB   185/185 KB   44/183 KB   185/185 KB   48/183 KB   185/185 KB   52/183 KB   185/185 KB   56/183 KB   185/185 KB   60/183 KB   185/185 KB   64/183 KB   185/185 KB   68/183 KB   185/185 KB   72/183 KB   185/185 KB   76/183 KB   185/185 KB   4/107 KB   76/183 KB   185/185 KB   8/107 KB   76/183 KB   185/185 KB   12/107 KB   76/183 KB   185/185 KB   16/107 KB   76/183 KB   185/185 KB   20/107 KB   76/183 KB   185/185 KB   24/107 KB   76/183 KB   185/185 KB   28/107 KB   76/183 KB   185/185 KB   32/107 KB   76/183 KB   185/185 KB   36/107 KB   76/183 KB   185/185 KB   40/107 KB   76/183 KB   185/185 KB   44/107 KB   76/183 KB   185/185 KB   48/107 KB   76/183 KB   185/185 KB   52/107 KB   76/183 KB   185/185 KB   56/107 KB   76/183 KB   185/185 KB   60/107 KB   76/183 KB   185/185 KB   64/107 KB   76/183 KB   185/185 KB   68/107 KB   76/183 KB   185/185 KB   72/107 KB   76/183 KB   185/185 KB   76/107 KB   76/183 KB   185/185 KB   80/107 KB   76/183 KB   185/185 KB   84/107 KB   76/183 KB   185/185 KB   88/107 KB   76/183 KB   185/185 KB   92/107 KB   76/183 KB   185/185 KB   96/107 KB   76/183 KB   185/185 KB   100/107 KB   76/183 KB   185/185 KB   104/107 KB   76/183 KB   185/185 KB   107/107 KB   76/183 KB   185/185 KB   107/107 KB   76/183 KB   185/185 KB   3/41 KB   107/107 KB   76/183 KB   185/185 KB   5/41 KB   107/107 KB   76/183 KB   185/185 KB   8/41 KB   107/107 KB   76/183 KB   185/185 KB   11/41 KB   107/107 KB   76/183 KB   185/185 KB   13/41 KB   107/107 KB   76/183 KB   185/185 KB   16/41 KB   107/107 KB   76/183 KB   185/185 KB   19/41 KB   107/107 KB   76/183 KB   185/185 KB   21/41 KB   107/107 KB   76/183 KB   185/185 KB   24/41 KB   107/107 KB   76/183 KB   185/185 KB   27/41 KB   107/107 KB   76/183 KB   185/185 KB   29/41 KB   107/107 KB   76/183 KB   185/185 KB   32/41 KB   107/107 KB   76/183 KB   185/185 KB   36/41 KB   107/107 KB   76/183 KB   185/185 KB   40/41 KB   107/107 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   3/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   5/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   8/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   11/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   13/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   16/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   19/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   21/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   24/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   27/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   29/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   32/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   36/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   40/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   44/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   48/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   52/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   56/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   60/165 KB   76/183 KB   185/185 KB   41/41 KB   107/107 KB   64/165 KB   76/183 KB   185/185 KB   41/41 KB                                                                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.jar (41 KB at 318.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.9/plexus-utils-3.0.9.jar
-107/107 KB   68/165 KB   76/183 KB   185/185 KB              107/107 KB   72/165 KB   76/183 KB   185/185 KB   107/107 KB   76/165 KB   76/183 KB   185/185 KB   107/107 KB   80/165 KB   76/183 KB   185/185 KB   107/107 KB   84/165 KB   76/183 KB   185/185 KB   107/107 KB   88/165 KB   76/183 KB   185/185 KB   107/107 KB   92/165 KB   76/183 KB   185/185 KB   107/107 KB   96/165 KB   76/183 KB   185/185 KB   107/107 KB   100/165 KB   76/183 KB   185/185 KB   107/107 KB   104/165 KB   76/183 KB   185/185 KB   107/107 KB   108/165 KB   76/183 KB   185/185 KB   107/107 KB   112/165 KB   76/183 KB   185/185 KB   107/107 KB   112/165 KB   80/183 KB   185/185 KB   107/107 KB   112/165 KB   84/183 KB   185/185 KB   107/107 KB   112/165 KB   88/183 KB   185/185 KB   107/107 KB   112/165 KB   92/183 KB   185/185 KB   107/107 KB   112/165 KB   96/183 KB   185/185 KB   107/107 KB   112/165 KB   100/183 KB   185/185 KB   107/107 KB   112/165 KB   104/183 KB   185/185 KB   107/107 KB   112/165 KB   108/183 KB   185/185 KB   107/107 KB   112/165 KB   112/183 KB   185/185 KB   107/107 KB   112/165 KB   116/183 KB   185/185 KB   107/107 KB   112/165 KB   120/183 KB   185/185 KB   107/107 KB   112/165 KB   124/183 KB   185/185 KB   107/107 KB   112/165 KB   128/183 KB   185/185 KB                                                       107/107 KB   112/165 KB   128/183 KB   4/227 KB     Downloaded: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar (185 KB at 1406.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar
-107/107 KB   112/165 KB   128/183 KB   8/227 KB   107/107 KB   112/165 KB   128/183 KB   12/227 KB   107/107 KB   112/165 KB   128/183 KB   16/227 KB   107/107 KB   112/165 KB   128/183 KB   20/227 KB   107/107 KB   112/165 KB   128/183 KB   24/227 KB   107/107 KB   112/165 KB   128/183 KB   28/227 KB   107/107 KB   112/165 KB   128/183 KB   32/227 KB   107/107 KB   112/165 KB   128/183 KB   36/227 KB   107/107 KB   112/165 KB   128/183 KB   40/227 KB   107/107 KB   112/165 KB   128/183 KB   44/227 KB   107/107 KB   112/165 KB   128/183 KB   48/227 KB   107/107 KB   112/165 KB   128/183 KB   52/227 KB   107/107 KB   112/165 KB   128/183 KB   56/227 KB   107/107 KB   112/165 KB   128/183 KB   60/227 KB   107/107 KB   112/165 KB   128/183 KB   64/227 KB   107/107 KB   112/165 KB   128/183 KB   68/227 KB   107/107 KB   112/165 KB   128/183 KB   72/227 KB   107/107 KB   112/165 KB   128/183 KB   76/227 KB   107/107 KB   112/165 KB   128/183 KB   80/227 KB   107/107 KB   112/165 KB   128/183 KB   84/227 KB   107/107 KB   112/165 KB   128/183 KB   88/227 KB   107/107 KB   116/165 KB   128/183 KB   88/227 KB   107/107 KB   120/165 KB   128/183 KB   88/227 KB   107/107 KB   124/165 KB   128/183 KB   88/227 KB   107/107 KB   128/165 KB   128/183 KB   88/227 KB   107/107 KB   132/165 KB   128/183 KB   88/227 KB   107/107 KB   136/165 KB   128/183 KB   88/227 KB   107/107 KB   140/165 KB   128/183 KB   88/227 KB   107/107 KB   144/165 KB   128/183 KB   88/227 KB   107/107 KB   148/165 KB   128/183 KB   88/227 KB   107/107 KB   152/165 KB   128/183 KB   88/227 KB   107/107 KB   156/165 KB   128/183 KB   88/227 KB   107/107 KB   160/165 KB   128/183 KB   88/227 KB   107/107 KB   164/165 KB   128/183 KB   88/227 KB   107/107 KB   165/165 KB   128/183 KB   88/227 KB   107/107 KB   165/165 KB   132/183 KB   88/227 KB   107/107 KB   165/165 KB   136/183 KB   88/227 KB   107/107 KB   165/165 KB   140/183 KB   88/227 KB   107/107 KB   165/165 KB   144/183 KB   88/227 KB   107/107 KB   165/165 KB   148/183 KB   88/227 KB   107/107 KB   165/165 KB   152/183 KB   88/227 KB   107/107 KB   165/165 KB   156/183 KB   88/227 KB   107/107 KB   165/165 KB   160/183 KB   88/227 KB   107/107 KB   165/165 KB   164/183 KB   88/227 KB   107/107 KB   165/165 KB   168/183 KB   88/227 KB   107/107 KB   165/165 KB   172/183 KB   88/227 KB   107/107 KB   165/165 KB   176/183 KB   88/227 KB   107/107 KB   165/165 KB   180/183 KB   88/227 KB   107/107 KB   165/165 KB   183/183 KB   88/227 KB                                                      Downloaded: https://repo.maven.apache.org/maven2/commons-digester/commons-digester/1.6/commons-digester-1.6.jar (165 KB at 1142.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
-107/107 KB   183/183 KB   92/227 KB                107/107 KB   183/183 KB   96/227 KB   107/107 KB   183/183 KB   100/227 KB   107/107 KB   183/183 KB   104/227 KB   107/107 KB   183/183 KB   108/227 KB   107/107 KB   183/183 KB   112/227 KB   107/107 KB   183/183 KB   116/227 KB   107/107 KB   183/183 KB   120/227 KB   107/107 KB   183/183 KB   124/227 KB   107/107 KB   183/183 KB   128/227 KB   107/107 KB   183/183 KB   132/227 KB   107/107 KB   183/183 KB   136/227 KB   107/107 KB   183/183 KB   140/227 KB   107/107 KB   183/183 KB   144/227 KB   107/107 KB   183/183 KB   148/227 KB   4/37 KB   107/107 KB   183/183 KB   148/227 KB   8/37 KB   107/107 KB   183/183 KB   148/227 KB   12/37 KB   107/107 KB   183/183 KB   148/227 KB   16/37 KB   107/107 KB   183/183 KB   148/227 KB   20/37 KB   107/107 KB   183/183 KB   148/227 KB   24/37 KB   107/107 KB   183/183 KB   148/227 KB   28/37 KB   107/107 KB   183/183 KB   148/227 KB   32/37 KB   107/107 KB   183/183 KB   148/227 KB                                                     Downloaded: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar (107 KB at 651.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar
-3/39 KB   32/37 KB   183/183 KB   148/227 KB      6/39 KB   32/37 KB   183/183 KB   148/227 KB   9/39 KB   32/37 KB   183/183 KB   148/227 KB   11/39 KB   32/37 KB   183/183 KB   148/227 KB   14/39 KB   32/37 KB   183/183 KB   148/227 KB   16/39 KB   32/37 KB   183/183 KB   148/227 KB   19/39 KB   32/37 KB   183/183 KB   148/227 KB   22/39 KB   32/37 KB   183/183 KB   148/227 KB   25/39 KB   32/37 KB   183/183 KB   148/227 KB   27/39 KB   32/37 KB   183/183 KB   148/227 KB   30/39 KB   32/37 KB   183/183 KB   148/227 KB   32/39 KB   32/37 KB   183/183 KB   148/227 KB   35/39 KB   32/37 KB   183/183 KB   148/227 KB   38/39 KB   32/37 KB   183/183 KB   148/227 KB   39/39 KB   32/37 KB   183/183 KB   148/227 KB                                                   Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.3/plexus-archiver-2.3.jar (183 KB at 979.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.6/plexus-io-2.0.6.jar
-39/39 KB   36/37 KB   148/227 KB                39/39 KB   37/37 KB   148/227 KB   39/39 KB   37/37 KB   152/227 KB   39/39 KB   37/37 KB   156/227 KB   39/39 KB   37/37 KB   160/227 KB   39/39 KB   37/37 KB   164/227 KB   39/39 KB   37/37 KB   168/227 KB   39/39 KB   37/37 KB   172/227 KB   39/39 KB   37/37 KB   176/227 KB   39/39 KB   37/37 KB   180/227 KB   39/39 KB   37/37 KB   184/227 KB   39/39 KB   37/37 KB   188/227 KB   39/39 KB   37/37 KB   192/227 KB   39/39 KB   37/37 KB   196/227 KB   39/39 KB   37/37 KB   200/227 KB   39/39 KB   37/37 KB   204/227 KB   39/39 KB   37/37 KB   208/227 KB   39/39 KB   37/37 KB   212/227 KB   39/39 KB   37/37 KB   216/227 KB   39/39 KB   37/37 KB   220/227 KB   39/39 KB   37/37 KB   224/227 KB   39/39 KB   37/37 KB   227/227 KB   3/57 KB   39/39 KB   37/37 KB   227/227 KB   5/57 KB   39/39 KB   37/37 KB   227/227 KB   8/57 KB   39/39 KB   37/37 KB   227/227 KB   11/57 KB   39/39 KB   37/37 KB   227/227 KB   13/57 KB   39/39 KB   37/37 KB   227/227 KB   16/57 KB   39/39 KB   37/37 KB   227/227 KB   19/57 KB   39/39 KB   37/37 KB   227/227 KB   21/57 KB   39/39 KB   37/37 KB   227/227 KB   24/57 KB   39/39 KB   37/37 KB   227/227 KB   27/57 KB   39/39 KB   37/37 KB   227/227 KB   29/57 KB   39/39 KB   37/37 KB   227/227 KB   32/57 KB   39/39 KB   37/37 KB   227/227 KB   36/57 KB   39/39 KB   37/37 KB   227/227 KB   40/57 KB   39/39 KB   37/37 KB   227/227 KB   44/57 KB   39/39 KB   37/37 KB   227/227 KB   48/57 KB   39/39 KB   37/37 KB   227/227 KB   52/57 KB   39/39 KB   37/37 KB   227/227 KB   56/57 KB   39/39 KB   37/37 KB   227/227 KB   57/57 KB   39/39 KB   37/37 KB   227/227 KB                                                 Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar (39 KB at 184.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.4/maven-dependency-analyzer-1.4.jar
-57/57 KB   37/37 KB   227/227 KB   4/42 KB    57/57 KB   37/37 KB   227/227 KB   8/42 KB   57/57 KB   37/37 KB   227/227 KB   12/42 KB   57/57 KB   37/37 KB   227/227 KB   16/42 KB   57/57 KB   37/37 KB   227/227 KB   20/42 KB                                                 Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar (37 KB at 167.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.jar
-57/57 KB   227/227 KB   24/42 KB              57/57 KB   227/227 KB   28/42 KB   57/57 KB   227/227 KB   32/42 KB   57/57 KB   227/227 KB   36/42 KB   57/57 KB   227/227 KB   40/42 KB   57/57 KB   227/227 KB   42/42 KB                                      Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.9/plexus-utils-3.0.9.jar (227 KB at 1024.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar
-                                   Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar (42 KB at 183.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-invoker/2.0.11/maven-invoker-2.0.11.jar
-57/57 KB   3/31 KB                 57/57 KB   6/31 KB   57/57 KB   9/31 KB   57/57 KB   11/31 KB   57/57 KB   14/31 KB   57/57 KB   16/31 KB   57/57 KB   19/31 KB   57/57 KB   22/31 KB   57/57 KB   25/31 KB   57/57 KB   27/31 KB   57/57 KB   3/43 KB   27/31 KB   57/57 KB   6/43 KB   27/31 KB   57/57 KB   9/43 KB   27/31 KB   57/57 KB   11/43 KB   27/31 KB   57/57 KB   14/43 KB   27/31 KB   57/57 KB   16/43 KB   27/31 KB   57/57 KB   19/43 KB   27/31 KB   57/57 KB   22/43 KB   27/31 KB   57/57 KB   25/43 KB   27/31 KB   57/57 KB   27/43 KB   27/31 KB   57/57 KB   30/43 KB   27/31 KB   57/57 KB   32/43 KB   27/31 KB   57/57 KB   36/43 KB   27/31 KB   57/57 KB   40/43 KB   27/31 KB   57/57 KB   43/43 KB   27/31 KB   57/57 KB   4/29 KB   43/43 KB   27/31 KB   57/57 KB   8/29 KB   43/43 KB   27/31 KB   57/57 KB   12/29 KB   43/43 KB   27/31 KB   57/57 KB   16/29 KB   43/43 KB   27/31 KB   57/57 KB   20/29 KB   43/43 KB   27/31 KB   57/57 KB   24/29 KB   43/43 KB   27/31 KB   57/57 KB   28/29 KB   43/43 KB   27/31 KB   57/57 KB   29/29 KB   43/43 KB   27/31 KB                                               Downloaded: https://repo.maven.apache.org/maven2/asm/asm/3.3.1/asm-3.3.1.jar (43 KB at 178.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
-                                            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.6/plexus-io-2.0.6.jar (57 KB at 234.7 KB/sec)
-29/29 KB   3/27 KB   27/31 KB               29/29 KB   5/27 KB   27/31 KB   29/29 KB   8/27 KB   27/31 KB   29/29 KB   11/27 KB   27/31 KB   29/29 KB   13/27 KB   27/31 KB   29/29 KB   16/27 KB   27/31 KB   29/29 KB   19/27 KB   27/31 KB   29/29 KB   21/27 KB   27/31 KB   29/29 KB   24/27 KB   27/31 KB   29/29 KB   27/27 KB   27/31 KB   29/29 KB   27/27 KB   27/31 KB   29/29 KB   27/27 KB   30/31 KB   29/29 KB   27/27 KB   31/31 KB   4/562 KB   29/29 KB   27/27 KB   31/31 KB   8/562 KB   29/29 KB   27/27 KB   31/31 KB   12/562 KB   29/29 KB   27/27 KB   31/31 KB   16/562 KB   29/29 KB   27/27 KB   31/31 KB   20/562 KB   29/29 KB   27/27 KB   31/31 KB   24/562 KB   29/29 KB   27/27 KB   31/31 KB   28/562 KB   29/29 KB   27/27 KB   31/31 KB   32/562 KB   29/29 KB   27/27 KB   31/31 KB                                                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-analyzer/1.4/maven-dependency-analyzer-1.4.jar (27 KB at 108.9 KB/sec)
-                                             Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.4/maven-common-artifact-filters-1.4.jar (31 KB at 122.5 KB/sec)
-                                             Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-invoker/2.0.11/maven-invoker-2.0.11.jar (29 KB at 111.6 KB/sec)
-36/562 KB                                    40/562 KB   44/562 KB   48/562 KB   52/562 KB   56/562 KB   60/562 KB   64/562 KB   68/562 KB   72/562 KB   76/562 KB   80/562 KB   84/562 KB   88/562 KB   92/562 KB   96/562 KB   100/562 KB   104/562 KB   108/562 KB   112/562 KB   116/562 KB   120/562 KB   124/562 KB   128/562 KB   132/562 KB   136/562 KB   140/562 KB   144/562 KB   148/562 KB   152/562 KB   156/562 KB   160/562 KB   164/562 KB   168/562 KB   172/562 KB   176/562 KB   180/562 KB   184/562 KB   188/562 KB   192/562 KB   196/562 KB   200/562 KB   204/562 KB   208/562 KB   212/562 KB   216/562 KB   220/562 KB   224/562 KB   228/562 KB   232/562 KB   236/562 KB   240/562 KB   244/562 KB   248/562 KB   252/562 KB   256/562 KB   260/562 KB   264/562 KB   268/562 KB   272/562 KB   276/562 KB   280/562 KB   284/562 KB   288/562 KB   292/562 KB   296/562 KB   300/562 KB   304/562 KB   308/562 KB   312/562 KB   316/562 KB   320/562 KB   324/562 KB   328/562 KB   332/562 KB   336/562 KB   340/562 KB   344/562 KB   348/562 KB   352/562 KB   356/562 KB   360/562 KB   364/562 KB   368/562 KB   372/562 KB   376/562 KB   380/562 KB   384/562 KB   388/562 KB   392/562 KB   396/562 KB   400/562 KB   404/562 KB   408/562 KB   412/562 KB   416/562 KB   420/562 KB   424/562 KB   428/562 KB   432/562 KB   436/562 KB   440/562 KB   444/562 KB   448/562 KB   452/562 KB   456/562 KB   460/562 KB   464/562 KB   468/562 KB   472/562 KB   476/562 KB   480/562 KB   484/562 KB   488/562 KB   492/562 KB   496/562 KB   500/562 KB   504/562 KB   508/562 KB   512/562 KB   516/562 KB   520/562 KB   524/562 KB   528/562 KB   532/562 KB   536/562 KB   540/562 KB   544/562 KB   548/562 KB   552/562 KB   556/562 KB   560/562 KB   562/562 KB                Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar (562 KB at 1904.8 KB/sec)
-[INFO] Copying zip4j-1.3.2.jar to /tmp/tmpoigaqabr/UMLParser/target/dependency/zip4j-1.3.2.jar
-[INFO] Copying junit-3.8.1.jar to /tmp/tmpoigaqabr/UMLParser/target/dependency/junit-3.8.1.jar
-[INFO] Copying commons-io-2.5.jar to /tmp/tmpoigaqabr/UMLParser/target/dependency/commons-io-2.5.jar
-[INFO] Copying plantuml-7999.jar to /tmp/tmpoigaqabr/UMLParser/target/dependency/plantuml-7999.jar
-[INFO] Copying javaparser-core-2.1.0.jar to /tmp/tmpoigaqabr/UMLParser/target/dependency/javaparser-core-2.1.0.jar
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 27.626 s
-[INFO] Finished at: 2019-04-11T16:22:00+00:00
-[INFO] Final Memory: 14M/50M
-[INFO] ------------------------------------------------------------------------
-Parsing Java Project to produce AST tree
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/umlparser.jar
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/target/dependency/zip4j-1.3.2.jar
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/target/dependency/junit-3.8.1.jar
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/target/dependency/commons-io-2.5.jar
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/target/dependency/plantuml-7999.jar
-Found and added jar at /tmp/tmpoigaqabr/UMLParser/target/dependency/javaparser-core-2.1.0.jar
-Class identified by ClassOrInterfaceDeclarationVisitor SequenceGenerator
-1
-([], [])
-([SequenceGenerator], [])
-
-.SequenceGenerator
-Class identified by MethodOverloadOverrideVisitor SequenceGenerator
-1
-([], [])
-([SequenceGenerator], [])
-
-.SequenceGenerator
-===================
-Method called: getCuArray
-Method called qualified name: UtilityHelper.getCuArray
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getTypes
-Method called qualified name: com.github.javaparser.ast.CompilationUnit.getTypes
-4
-([com, github, javaparser, ast], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast)])
-([CompilationUnit], [])
-com.github.javaparser.ast
-com.github.javaparser.ast.CompilationUnit
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getExpression
-Method called qualified name: com.github.javaparser.ast.stmt.ExpressionStmt.getExpression
-5
-([com, github, javaparser, ast, stmt], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,stmt)])
-([ExpressionStmt], [])
-com.github.javaparser.ast.stmt
-com.github.javaparser.ast.stmt.ExpressionStmt
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getExpression
-Method called qualified name: com.github.javaparser.ast.stmt.ExpressionStmt.getExpression
-5
-([com, github, javaparser, ast, stmt], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,stmt)])
-([ExpressionStmt], [])
-com.github.javaparser.ast.stmt
-com.github.javaparser.ast.stmt.ExpressionStmt
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: add
-Method called qualified name: java.util.ArrayList.add
-2
-([java, util], [Contains=(java,util)])
-([ArrayList], [])
-java.util
-java.util.ArrayList
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to ((Node) childrenNode).getChildrenNodes()', cause='null'}
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to methodDeclaration.getChildrenNodes()', cause='null'}
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: put
-Method called qualified name: java.util.HashMap.put
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: put
-Method called qualified name: java.util.HashMap.put
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getMembers
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getMembers
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: parse
-Method called qualified name: SequenceGenerator.parse
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: printStackTrace
-Method called qualified name: java.lang.Throwable.printStackTrace
-2
-([java, lang], [Contains=(java,lang)])
-([Throwable], [])
-java.lang
-java.lang.Throwable
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: printStackTrace
-Method called qualified name: java.lang.Throwable.printStackTrace
-2
-([java, lang], [Contains=(java,lang)])
-([Throwable], [])
-java.lang
-java.lang.Throwable
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: generateImage
-Method called qualified name: net.sourceforge.plantuml.SourceStringReader.generateImage
-3
-([net, sourceforge, plantuml], [Contains=(net,sourceforge), Contains=(sourceforge,plantuml)])
-([SourceStringReader], [])
-net.sourceforge.plantuml
-net.sourceforge.plantuml.SourceStringReader
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: SequenceGenerator.start
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.expr.MethodCallExpr.getName
-5
-([com, github, javaparser, ast, expr], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,expr)])
-([MethodCallExpr], [])
-com.github.javaparser.ast.expr
-com.github.javaparser.ast.expr.MethodCallExpr
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: toStringWithoutComments
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to methodCallExpression.toStringWithoutComments()', cause='null'}
-===================
-Method called: parse
-Method called qualified name: SequenceGenerator.parse
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: SequenceGenerator.parse
-Package name: 
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-Class identified by ClassOrInterfaceDeclarationVisitor UtilityHelper
-1
-([], [])
-([UtilityHelper], [])
-
-.UtilityHelper
-Class identified by MethodOverloadOverrideVisitor UtilityHelper
-1
-([], [])
-([UtilityHelper], [])
-
-.UtilityHelper
-===================
-Method called: split
-Method called qualified name: java.lang.String.split
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.removeDups
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: asList
-Method called qualified name: java.util.Arrays.asList
-2
-([java, util], [Contains=(java,util)])
-([Arrays], [])
-java.util
-java.util.Arrays
-Method called by parent method with qualified name: UtilityHelper.removeDups
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: toArray
-Method called qualified name: java.util.AbstractCollection.toArray
-2
-([java, util], [Contains=(java,util)])
-([AbstractCollection], [])
-java.util
-java.util.AbstractCollection
-Method called by parent method with qualified name: UtilityHelper.removeDups
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: join
-Method called qualified name: java.lang.String.join
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.removeDups
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: isFile
-Method called qualified name: java.io.File.isFile
-2
-([java, io], [Contains=(java,io)])
-([File], [])
-java.io
-java.io.File
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getName
-Method called qualified name: java.io.File.getName
-2
-([java, io], [Contains=(java,io)])
-([File], [])
-java.io
-java.io.File
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: endsWith
-Method called qualified name: java.lang.String.endsWith
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: close
-Method called qualified name: java.io.FileInputStream.close
-2
-([java, io], [Contains=(java,io)])
-([FileInputStream], [])
-java.io
-java.io.FileInputStream
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: parse
-Method called qualified name: com.github.javaparser.JavaParser.parse
-3
-([com, github, javaparser], [Contains=(com,github), Contains=(github,javaparser)])
-([JavaParser], [])
-com.github.javaparser
-com.github.javaparser.JavaParser
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: add
-Method called qualified name: java.util.ArrayList.add
-2
-([java, util], [Contains=(java,util)])
-([ArrayList], [])
-java.util
-java.util.ArrayList
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: listOfJavaFiles
-Method called qualified name: UtilityHelper.listOfJavaFiles
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: UtilityHelper.getCuArray
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getTypes
-Method called qualified name: com.github.javaparser.ast.CompilationUnit.getTypes
-4
-([com, github, javaparser, ast], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast)])
-([CompilationUnit], [])
-com.github.javaparser.ast
-com.github.javaparser.ast.CompilationUnit
-Method called by parent method with qualified name: UtilityHelper.buildMapOfIntAndClasses
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: UtilityHelper.buildMapOfIntAndClasses
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: isInterface
-Method called qualified name: com.github.javaparser.ast.body.ClassOrInterfaceDeclaration.isInterface
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([ClassOrInterfaceDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.ClassOrInterfaceDeclaration
-Method called by parent method with qualified name: UtilityHelper.buildMapOfIntAndClasses
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getClassOrIntMap
-Method called qualified name: ClassGenerator.getClassOrIntMap
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-Method called by parent method with qualified name: UtilityHelper.buildMapOfIntAndClasses
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: put
-Method called qualified name: java.util.Map.put
-2
-([java, util], [Contains=(java,util)])
-([Map], [])
-java.util
-java.util.Map
-Method called by parent method with qualified name: UtilityHelper.buildMapOfIntAndClasses
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: toLowerCase
-Method called qualified name: java.lang.String.toLowerCase
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.Anonymous-0035235e-97fd-46b8-b8d0-1ab11f2fb3d0.accept
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: endsWith
-Method called qualified name: java.lang.String.endsWith
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.Anonymous-23c5a36d-de6c-4a9f-a7f4-f994b4159fb3.accept
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: listFiles
-Method called qualified name: java.io.File.listFiles
-2
-([java, io], [Contains=(java,io)])
-([File], [])
-java.io
-java.io.File
-Method called by parent method with qualified name: UtilityHelper.listOfJavaFiles
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: parser
-Method called qualified name: ClassGenerator.parser
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-Method called by parent method with qualified name: UtilityHelper.buildAst
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: replace
-Method called qualified name: java.lang.String.replace
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.bracketChangeMethod
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: replace
-Method called qualified name: java.lang.String.replace
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.bracketChangeMethod
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: replace
-Method called qualified name: java.lang.String.replace
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.bracketChangeMethod
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: replace
-Method called qualified name: java.lang.String.replace
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.bracketChangeMethod
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.modifyScope
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.modifyScope
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: keySet
-Method called qualified name: java.util.HashMap.keySet
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: UtilityHelper.parseAdditions
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: split
-Method called qualified name: java.lang.String.split
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: UtilityHelper.parseAdditions
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: UtilityHelper.parseAdditions
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: UtilityHelper.parseAdditions
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: UtilityHelper.parseAdditions
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: printStackTrace
-Method called qualified name: java.lang.Throwable.printStackTrace
-2
-([java, lang], [Contains=(java,lang)])
-([Throwable], [])
-java.lang
-java.lang.Throwable
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: printStackTrace
-Method called qualified name: java.lang.Throwable.printStackTrace
-2
-([java, lang], [Contains=(java,lang)])
-([Throwable], [])
-java.lang
-java.lang.Throwable
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: openConnection
-Method called qualified name: java.net.URL.openConnection
-2
-([java, net], [Contains=(java,net)])
-([URL], [])
-java.net
-java.net.URL
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: setRequestMethod
-Method called qualified name: java.net.HttpURLConnection.setRequestMethod
-2
-([java, net], [Contains=(java,net)])
-([HttpURLConnection], [])
-java.net
-java.net.HttpURLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: setRequestProperty
-Method called qualified name: java.net.URLConnection.setRequestProperty
-2
-([java, net], [Contains=(java,net)])
-([URLConnection], [])
-java.net
-java.net.URLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getResponseCode
-Method called qualified name: java.net.HttpURLConnection.getResponseCode
-2
-([java, net], [Contains=(java,net)])
-([HttpURLConnection], [])
-java.net
-java.net.HttpURLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getResponseCode
-Method called qualified name: java.net.HttpURLConnection.getResponseCode
-2
-([java, net], [Contains=(java,net)])
-([HttpURLConnection], [])
-java.net
-java.net.HttpURLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: write
-Method called qualified name: java.io.OutputStream.write
-2
-([java, io], [Contains=(java,io)])
-([OutputStream], [])
-java.io
-java.io.OutputStream
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: getInputStream
-Method called qualified name: java.net.URLConnection.getInputStream
-2
-([java, net], [Contains=(java,net)])
-([URLConnection], [])
-java.net
-java.net.URLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: read
-Method called qualified name: java.io.InputStream.read
-2
-([java, io], [Contains=(java,io)])
-([InputStream], [])
-java.io
-java.io.InputStream
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: close
-Method called qualified name: java.io.OutputStream.close
-2
-([java, io], [Contains=(java,io)])
-([OutputStream], [])
-java.io
-java.io.OutputStream
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-===================
-Method called: disconnect
-Method called qualified name: java.net.HttpURLConnection.disconnect
-2
-([java, net], [Contains=(java,net)])
-([HttpURLConnection], [])
-java.net
-java.net.HttpURLConnection
-Method called by parent method with qualified name: UtilityHelper.generatePNG
-Package name: 
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Class identified by ClassOrInterfaceDeclarationVisitor ClassGenerator
-1
-([], [])
-([ClassGenerator], [])
-
-.ClassGenerator
-Class identified by MethodOverloadOverrideVisitor ClassGenerator
-1
-([], [])
-([ClassGenerator], [])
-
-.ClassGenerator
-===================
-Method called: getCuArray
-Method called qualified name: UtilityHelper.getCuArray
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: buildMapOfIntAndClasses
-Method called qualified name: UtilityHelper.buildMapOfIntAndClasses
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: buildAst
-Method called qualified name: UtilityHelper.buildAst
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: parseAdditions
-Method called qualified name: UtilityHelper.parseAdditions
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: removeDups
-Method called qualified name: UtilityHelper.removeDups
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: generatePNG
-Method called qualified name: UtilityHelper.generatePNG
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassGenerator.start
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: getTypes
-Method called qualified name: com.github.javaparser.ast.CompilationUnit.getTypes
-4
-([com, github, javaparser, ast], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast)])
-([CompilationUnit], [])
-com.github.javaparser.ast
-com.github.javaparser.ast.CompilationUnit
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: get
-Method called qualified name: java.util.List.get
-2
-([java, util], [Contains=(java,util)])
-([List], [])
-java.util
-java.util.List
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: isInterface
-Method called qualified name: com.github.javaparser.ast.body.ClassOrInterfaceDeclaration.isInterface
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([ClassOrInterfaceDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.ClassOrInterfaceDeclaration
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: constructorParser
-Method called qualified name: ClassHelper.constructorParser
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: constructorParser
-Method called qualified name: ClassHelper.constructorParser
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: methodParser
-Method called qualified name: ClassHelper.methodParser
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: methodParser
-Method called qualified name: ClassHelper.methodParser
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: fieldParser
-Method called qualified name: ClassHelper.fieldParser
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: inheritanceChecker
-Method called qualified name: ClassHelper.inheritanceChecker
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: implementationChecker
-Method called qualified name: ClassHelper.implementationChecker
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: combiner
-Method called qualified name: ClassHelper.combiner
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-===================
-Method called: replaceAll
-Method called qualified name: java.lang.String.replaceAll
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassGenerator.parser
-Package name: 
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-Class identified by ClassOrInterfaceDeclarationVisitor ClassHelper
-1
-([], [])
-([ClassHelper], [])
-
-.ClassHelper
-Class identified by MethodOverloadOverrideVisitor ClassHelper
-1
-([], [])
-([ClassHelper], [])
-
-.ClassHelper
-===================
-Method called: getDeclarationAsString
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getDeclarationAsString
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: startsWith
-Method called qualified name: java.lang.String.startsWith
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: isInterface
-Method called qualified name: com.github.javaparser.ast.body.ClassOrInterfaceDeclaration.isInterface
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([ClassOrInterfaceDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.ClassOrInterfaceDeclaration
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getType
-Method called qualified name: com.github.javaparser.ast.body.Parameter.getType
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([Parameter], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.Parameter
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: toString
-Method called qualified name: com.github.javaparser.ast.Node.toString
-4
-([com, github, javaparser, ast], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast)])
-([Node], [])
-com.github.javaparser.ast
-com.github.javaparser.ast.Node
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to typeparam.getChildrenNodes()', cause='null'}
-===================
-Method called: get
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='typeparam.getChildrenNodes().get(0)', name='typeparam.getChildrenNodes()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context typeparam.getChildrenNodes() (line: 29) MethodCallExprContext{wrapped=typeparam.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='typeparam.getChildrenNodes().get(0).toString()', name='typeparam.getChildrenNodes().get(0)', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context typeparam.getChildrenNodes() (line: 29) MethodCallExprContext{wrapped=typeparam.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to constructorDelcaration.getChildrenNodes()', cause='null'}
-===================
-Method called: getMembers
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getMembers
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: ClassHelper.constructorParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getDeclarationAsString
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getDeclarationAsString
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: startsWith
-Method called qualified name: java.lang.String.startsWith
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: isInterface
-Method called qualified name: com.github.javaparser.ast.body.ClassOrInterfaceDeclaration.isInterface
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([ClassOrInterfaceDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.ClassOrInterfaceDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: startsWith
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to md.getName().startsWith("get")', cause='null'}
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: startsWith
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to md.getName().startsWith("set")', cause='null'}
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: toString
-Method called qualified name: java.lang.Object.toString
-2
-([java, lang], [Contains=(java,lang)])
-([Object], [])
-java.lang
-java.lang.Object
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: split
-Method called qualified name: java.lang.String.split
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getType
-Method called qualified name: com.github.javaparser.ast.body.Parameter.getType
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([Parameter], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.Parameter
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: toString
-Method called qualified name: com.github.javaparser.ast.Node.toString
-4
-([com, github, javaparser, ast], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast)])
-([Node], [])
-com.github.javaparser.ast
-com.github.javaparser.ast.Node
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to castparameter.getChildrenNodes()', cause='null'}
-===================
-Method called: get
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='castparameter.getChildrenNodes().get(0)', name='castparameter.getChildrenNodes()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context castparameter.getChildrenNodes() (line: 71) MethodCallExprContext{wrapped=castparameter.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='castparameter.getChildrenNodes().get(0).toString()', name='castparameter.getChildrenNodes().get(0)', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context castparameter.getChildrenNodes() (line: 71) MethodCallExprContext{wrapped=castparameter.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to md.getChildrenNodes()', cause='null'}
-===================
-Method called: getType
-Method called qualified name: com.github.javaparser.ast.body.MethodDeclaration.getType
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([MethodDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.MethodDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getName
-Method called qualified name: com.github.javaparser.ast.body.CallableDeclaration.getName
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([CallableDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.CallableDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: substring
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to md.getName().substring(3)', cause='null'}
-===================
-Method called: toLowerCase
-Method called qualified name: java.lang.String.toLowerCase
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: add
-Method called qualified name: java.util.List.add
-2
-([java, util], [Contains=(java,util)])
-([List], [])
-java.util
-java.util.List
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getMembers
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getMembers
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: ClassHelper.methodParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: toStringWithoutComments
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to bodyDeclaration.toStringWithoutComments()', cause='null'}
-===================
-Method called: indexOf
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='bodyDeclaration.toStringWithoutComments().indexOf(" ")', name='bodyDeclaration.toStringWithoutComments()', cause='java.lang.RuntimeException: Method 'toStringWithoutComments' cannot be resolved in context bodyDeclaration.toStringWithoutComments() (line: 117) MethodCallExprContext{wrapped=bodyDeclaration.toStringWithoutComments()}. Parameter types: []'}
-===================
-Method called: toStringWithoutComments
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to bodyDeclaration.toStringWithoutComments()', cause='null'}
-===================
-Method called: substring
-Error occurred attempting to add calls edge
-java.lang.RuntimeException: Unable to calculate the type of a parameter of a method call. Method call: bodyDeclaration.toStringWithoutComments().substring(0, bodyDeclaration.toStringWithoutComments().indexOf(" ")), Parameter: bodyDeclaration.toStringWithoutComments().indexOf(" ")
-===================
-Method called: modifyScope
-Error occurred attempting to add calls edge
-java.lang.RuntimeException: Unable to calculate the type of a parameter of a method call. Method call: UtilityHelper.modifyScope(bodyDeclaration.toStringWithoutComments().substring(0, bodyDeclaration.toStringWithoutComments().indexOf(" "))), Parameter: bodyDeclaration.toStringWithoutComments().substring(0, bodyDeclaration.toStringWithoutComments().indexOf(" "))
-===================
-Method called: getType
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to fieldDeclaration.getType()', cause='null'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getType().toString()', name='fieldDeclaration.getType()', cause='java.lang.RuntimeException: Method 'getType' cannot be resolved in context fieldDeclaration.getType() (line: 118) MethodCallExprContext{wrapped=fieldDeclaration.getType()}. Parameter types: []'}
-===================
-Method called: bracketChangeMethod
-Error occurred attempting to add calls edge
-java.lang.RuntimeException: Unable to calculate the type of a parameter of a method call. Method call: UtilityHelper.bracketChangeMethod(fieldDeclaration.getType().toString()), Parameter: fieldDeclaration.getType().toString()
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to fieldDeclaration.getChildrenNodes()', cause='null'}
-===================
-Method called: get
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1)', name='fieldDeclaration.getChildrenNodes()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 119) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1).toString()', name='fieldDeclaration.getChildrenNodes().get(1)', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 119) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: contains
-Method called qualified name: java.lang.String.contains
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to fieldDeclaration.getChildrenNodes()', cause='null'}
-===================
-Method called: get
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1)', name='fieldDeclaration.getChildrenNodes()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 121) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1).toString()', name='fieldDeclaration.getChildrenNodes().get(1)', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 121) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: indexOf
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1).toString().indexOf("=")', name='fieldDeclaration.getChildrenNodes().get(1).toString()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 121) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: getChildrenNodes
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to fieldDeclaration.getChildrenNodes()', cause='null'}
-===================
-Method called: get
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1)', name='fieldDeclaration.getChildrenNodes()', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 121) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: toString
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='fieldDeclaration.getChildrenNodes().get(1).toString()', name='fieldDeclaration.getChildrenNodes().get(1)', cause='java.lang.RuntimeException: Method 'getChildrenNodes' cannot be resolved in context fieldDeclaration.getChildrenNodes() (line: 121) MethodCallExprContext{wrapped=fieldDeclaration.getChildrenNodes()}. Parameter types: []'}
-===================
-Method called: substring
-Error occurred attempting to add calls edge
-java.lang.RuntimeException: Unable to calculate the type of a parameter of a method call. Method call: fieldDeclaration.getChildrenNodes().get(1).toString().substring(0, fieldDeclaration.getChildrenNodes().get(1).toString().indexOf("=") - 1), Parameter: fieldDeclaration.getChildrenNodes().get(1).toString().indexOf("=") - 1
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: toLowerCase
-Method called qualified name: java.lang.String.toLowerCase
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: contains
-Method called qualified name: java.util.List.contains
-2
-([java, util], [Contains=(java,util)])
-([List], [])
-java.util
-java.util.List
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: contains
-Method called qualified name: java.lang.String.contains
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: indexOf
-Method called qualified name: java.lang.String.indexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: indexOf
-Method called qualified name: java.lang.String.indexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: substring
-Method called qualified name: java.lang.String.substring
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: length
-Method called qualified name: java.lang.String.length
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: put
-Method called qualified name: java.util.HashMap.put
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: get
-Method called qualified name: java.util.HashMap.get
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: put
-Method called qualified name: java.util.HashMap.put
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: contains
-Method called qualified name: java.lang.String.contains
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: containsKey
-Method called qualified name: java.util.HashMap.containsKey
-2
-([java, util], [Contains=(java,util)])
-([HashMap], [])
-java.util
-java.util.HashMap
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getMembers
-Method called qualified name: com.github.javaparser.ast.body.TypeDeclaration.getMembers
-5
-([com, github, javaparser, ast, body], [Contains=(com,github), Contains=(github,javaparser), Contains=(javaparser,ast), Contains=(ast,body)])
-([TypeDeclaration], [])
-com.github.javaparser.ast.body
-com.github.javaparser.ast.body.TypeDeclaration
-Method called by parent method with qualified name: ClassHelper.fieldParser
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: getExtends
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to coi.getExtends()', cause='null'}
-===================
-Method called: getExtends
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to coi.getExtends()', cause='null'}
-===================
-Method called: getImplements
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to classOrIntDeclaration.getImplements()', cause='null'}
-===================
-Method called: getImplements
-Error occurred attempting to add calls edge
-UnsolvedSymbolException{context='null', name='We are unable to find the method declaration corresponding to classOrIntDeclaration.getImplements()', cause='null'}
-===================
-Method called: isEmpty
-Method called qualified name: java.lang.String.isEmpty
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.combiner
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: bracketChangeMethod
-Method called qualified name: UtilityHelper.bracketChangeMethod
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassHelper.combiner
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: isEmpty
-Method called qualified name: java.lang.String.isEmpty
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: ClassHelper.combiner
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-===================
-Method called: bracketChangeMethod
-Method called qualified name: UtilityHelper.bracketChangeMethod
-1
-([UtilityHelper], [])
-([UtilityHelper], [])
-UtilityHelper
-UtilityHelper.UtilityHelper
-Method called by parent method with qualified name: ClassHelper.combiner
-Package name: 
-1
-([ClassHelper], [])
-([ClassHelper], [])
-ClassHelper
-ClassHelper.ClassHelper
-Class identified by ClassOrInterfaceDeclarationVisitor Test
-1
-([], [])
-([Test], [])
-
-.Test
-Class identified by MethodOverloadOverrideVisitor Test
-1
-([], [])
-([Test], [])
-
-.Test
-===================
-Method called: getExtension
-Method called qualified name: org.apache.commons.io.FilenameUtils.getExtension
-4
-([org, apache, commons, io], [Contains=(org,apache), Contains=(apache,commons), Contains=(commons,io)])
-([FilenameUtils], [])
-org.apache.commons.io
-org.apache.commons.io.FilenameUtils
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: lastIndexOf
-Method called qualified name: java.lang.String.lastIndexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: substring
-Method called qualified name: java.lang.String.substring
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: printStackTrace
-Method called qualified name: java.lang.Throwable.printStackTrace
-2
-([java, lang], [Contains=(java,lang)])
-([Throwable], [])
-java.lang
-java.lang.Throwable
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: extractAll
-Method called qualified name: net.lingala.zip4j.core.ZipFile.extractAll
-4
-([net, lingala, zip4j, core], [Contains=(net,lingala), Contains=(lingala,zip4j), Contains=(zip4j,core)])
-([ZipFile], [])
-net.lingala.zip4j.core
-net.lingala.zip4j.core.ZipFile
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: lastIndexOf
-Method called qualified name: java.lang.String.lastIndexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: lastIndexOf
-Method called qualified name: java.lang.String.lastIndexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: substring
-Method called qualified name: java.lang.String.substring
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: start
-Method called qualified name: SequenceGenerator.start
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: start
-Method called qualified name: ClassGenerator.start
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: equals
-Method called qualified name: java.lang.String.equals
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: println
-Method called qualified name: java.io.PrintStream.println
-2
-([java, io], [Contains=(java,io)])
-([PrintStream], [])
-java.io
-java.io.PrintStream
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: indexOf
-Method called qualified name: java.lang.String.indexOf
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: substring
-Method called qualified name: java.lang.String.substring
-2
-([java, lang], [Contains=(java,lang)])
-([String], [])
-java.lang
-java.lang.String
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: start
-Method called qualified name: SequenceGenerator.start
-1
-([SequenceGenerator], [])
-([SequenceGenerator], [])
-SequenceGenerator
-SequenceGenerator.SequenceGenerator
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-===================
-Method called: start
-Method called qualified name: ClassGenerator.start
-1
-([ClassGenerator], [])
-([ClassGenerator], [])
-ClassGenerator
-ClassGenerator.ClassGenerator
-Method called by parent method with qualified name: Test.main
-Package name: 
-1
-([Test], [])
-([Test], [])
-Test
-Test.Test
-Exporting to neo4j
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Completed parsing of project
