@@ -1,0 +1,12 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/javaparser/javaparser-core/3.1.0/javaparser-core-3.1.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/javaparser/java-symbol-solver-core/0.4.0/java-symbol-solver-core-0.4.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/javaparser/java-symbol-solver-model/0.4.0/java-symbol-solver-model-0.4.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/javaslang/javaslang/2.0.0-beta/javaslang-2.0.0-beta.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/javaparser/java-symbol-solver-logic/0.4.0/java-symbol-solver-logic-0.4.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/javaslang/javaslang/2.0.3/javaslang-2.0.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/javaslang/javaslang-match/2.0.3/javaslang-match-2.0.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/net/sourceforge/plantuml/plantuml/8059/plantuml-8059.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
