@@ -1,5 +1,6 @@
 let renderTreemapWithDependentsIcicle = async (_, renderTreemap, group, repo, dependentGroup, dependentRepo) => {
-  // from https://gist.github.com/hyamamoto/fd435505d29ebfa3d9716fd2be8d42f0
+  
+  // hashString function from https://gist.github.com/hyamamoto/fd435505d29ebfa3d9716fd2be8d42f0
   function hashString(inString) {
     let hash = 0;
 
